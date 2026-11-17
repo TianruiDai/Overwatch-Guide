@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101319"><meta name="description" content="导入守望先锋第一视角录像，按团战回看站位、技能与决策。">
+  <title>Overwatch Guide · 复盘工作台</title><link rel="icon" href="/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到内容</a>
+<div class="shell">
+  <aside class="rail" id="rail">
+    <a class="brand" href="#workspace" aria-label="Overwatch Guide 首页"><img src="/mark.svg" alt=""><span>OVERWATCH<em>GUIDE</em></span></a>
+    <div class="nav-label">工作空间</div><nav id="navigation" aria-label="工作空间"></nav>
+    <div class="rail-bottom"><div class="rail-rule"></div><a class="nav-item" data-page="settings" href="#settings"><i data-icon="settings"></i><span>模型设置</span></a>
+    <div class="local-label"><span class="local-symbol"><i data-icon="harddrive"></i></span><span>本机工作区<small>设备端保存</small></span></div></div>
+  </aside>
+  <div class="surface">
+    <header class="topbar"><div class="top-path"><button type="button" class="icon-button hamburger" id="menu" aria-label="打开导航" aria-expanded="false"><i data-icon="menu"></i></button><i data-icon="panels"></i><span>工作空间</span><span class="slash">/</span><b id="crumb">复盘工作台</b></div><a class="model-status" id="model-status" href="#settings"><span class="dot"></span><span>模型设置</span><i data-icon="chevron"></i></a></header>
+    <main id="main" tabindex="-1" aria-live="off"><div class="loading">正在打开工作台…</div></main>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div><dialog id="dialog"></dialog>
+<input type="file" id="video-file" accept="video/*,.mp4,.webm,.mov,.m4v,.ogv" hidden>
+<script type="module" src="/app.mjs"></script>
+</body></html>

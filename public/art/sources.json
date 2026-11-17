@@ -1,0 +1,29 @@
+{
+  "credit": "Overwatch game artwork © Blizzard Entertainment. Images have been resized and encoded as WebP for display.",
+  "assets": [
+    {
+      "file": "kings-row.webp",
+      "description": "国王大道夜景，双层巴士与钟楼。",
+      "source": "https://github.com/TeKrop/overfast-api/blob/main/static/maps/kings-row.jpg",
+      "sourceBlob": "1eb9a680622dd2e3651343ae12528c685ae65d10"
+    },
+    {
+      "file": "dorado.webp",
+      "description": "多拉多夜间广场。",
+      "source": "https://github.com/TeKrop/overfast-api/blob/main/static/maps/dorado.jpg",
+      "sourceBlob": "067f2868795316b20764a2fa072baefd7c733222"
+    },
+    {
+      "file": "lijiang.webp",
+      "description": "漓江塔夜间天际线。",
+      "source": "https://github.com/TeKrop/overfast-api/blob/main/static/maps/lijiang-tower.jpg",
+      "sourceBlob": "79d3f46cf1e5fc2d52aa3c73ccd88d63f778affe"
+    },
+    {
+      "file": "winston.webp",
+      "description": "温斯顿手持特斯拉炮的半身游戏立绘，透明背景。",
+      "source": "https://github.com/hphuyn3d/OverwatchWebsite/blob/master/images/TankHeroes/Winston-portrait.png",
+      "sourceBlob": "8fa96a1a159c3417f9568cf0d2ab43773b3655d7"
+    }
+  ]
+}
