@@ -44,7 +44,7 @@ async function tree(relative) {
   }
   return names;
 }
-const lists = await Promise.all(['public', 'shared', 'server', 'scripts', 'tests'].map(tree));
+const lists = await Promise.all(['public', 'shared', 'server', 'scripts', 'tests', 'docs'].map(tree));
 const files = [...lists.flat(), 'package.json', 'package-lock.json', 'README.md', '.env.example', '.gitignore'];
 const sources = {},
   assets = {};
