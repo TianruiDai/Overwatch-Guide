@@ -52,7 +52,7 @@ export const examples = [{
     id: 'lijiang',
     map: '漓江塔',
     art: 'lijiang',
-    role: '支援',
+    role: '辅助',
     hero: '安娜',
     topic: '点外站位与治疗视线',
     intro: '队伍从点外进入控制区。跟队友的移动调整视角，在掩体边同时保留治疗和施压的机会。',

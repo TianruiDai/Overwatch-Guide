@@ -1,68 +1,293 @@
 [
   {
-    "id": "wang-winston-replay",
-    "title": "温斯顿的第一跳",
-    "author": "人上人老王",
-    "sourceTitle": "OW归来：网课 · 温斯顿篇上，第 2 集「猩猩实战讲解」",
-    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/?p=2",
-    "role": "重装",
-    "heroes": ["温斯顿"],
-    "tags": ["落位", "进场", "喷射背包", "屏障"],
-    "principle": "这节实战课适合对照同一次起跳前、落地时和交罩后的三个画面。",
-    "application": "在自己的录像里标出落点、最近的掩体和当时能跟枪的队友，再看老王的落点给他留下了哪些选择。",
+    "id": "guxue-asia-top-vod",
+    "title": "高分局坦克等技能交换再进",
+    "author": "孤雪 · OA-Guxue8",
+    "sourceTitle": "全守望质量最高的亚服第一对局",
+    "url": "https://www.bilibili.com/video/BV1xe9UYpE3y/",
+    "role": "综合",
+    "heroes": [],
+    "stage": "团战",
+    "tags": [
+      "进场时机",
+      "技能交换",
+      "高分局"
+    ],
+    "principle": "对面关键保命还在时硬进，等于帮对面交技能。先听报点或看见技能空窗再压。",
+    "application": "你第一次过角时，敌方矩阵、睡镖、灯是否还在。",
     "kind": "观摩索引"
   },
   {
-    "id": "winston-kings-row",
-    "maps": ["国王大道"],
-    "title": "国王大道 A 点的第一处落位",
-    "author": "17173 守望先锋专区",
-    "sourceTitle": "《守望先锋》温斯顿基础讲解 · 国王大道示例",
-    "url": "https://ow.17173.com/content/07232025/165721278.shtml",
+    "id": "guxue-dorado-allstar",
+    "title": "孤雪-温斯顿-多拉多温斯顿优先抢斜角高台压力",
+    "author": "孤雪 · OA-Guxue8",
+    "sourceTitle": "【Guxue】多拉多全明星教学局",
+    "url": "https://www.bilibili.com/video/BV1hX4y1378W/",
     "role": "重装",
-    "heroes": ["温斯顿"],
-    "tags": ["国王大道", "A点", "落位", "进攻", "掩体", "雕像"],
-    "principle": "从雕像附近读防守站位。正面压力小时可以步行靠近，从有遮挡、队友能支援的位置再威胁后排。",
-    "application": "停在过拱门前，比较步行到雕像和直接跳过雕像。两条路线分别会暴露给哪些敌人？落地后谁能跟进？",
+    "heroes": [
+      "温斯顿"
+    ],
+    "maps": [
+      "多拉多"
+    ],
+    "stage": "落位",
+    "tags": [
+      "多拉多",
+      "落位",
+      "高台",
+      "教学局"
+    ],
+    "principle": "正门硬撞车身容易被集火。从斜角或高台跳后排，逼对方回头。",
+    "application": "每波开团落点：是车身正面还是侧后高台。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "guxue-engage-timing-general",
+    "title": "T位进场看队友枪线是否就位",
+    "author": "孤雪 · OA-Guxue8",
+    "sourceTitle": "OA-Guxue8 T位对局合集",
+    "url": "https://space.bilibili.com/13854759/upload/video",
+    "role": "综合",
+    "heroes": [],
+    "stage": "团战",
+    "tags": [
+      "进场",
+      "技能交换",
+      "重装",
+      "综合"
+    ],
+    "principle": "你先到、队友还在转角，对面可以五打一。进场口令是枪线到了，不是你血厚。",
+    "application": "过角瞬间数能打到同一目标的队友人数。",
+    "kind": "教练笔记"
+  },
+  {
+    "id": "guxue-perks-pick",
+    "title": "威能跟着对局问题选，不跟着稀有度",
+    "author": "孤雪 · OA-Guxue8",
+    "sourceTitle": "【Guxue】看完学会如何选威能",
+    "url": "https://www.bilibili.com/video/BV1hX4y1378W/",
+    "role": "综合",
+    "heroes": [],
+    "stage": "团战",
+    "tags": [
+      "威能",
+      "版本",
+      "重装"
+    ],
+    "principle": "这局缺续航就补续航，缺开团就补开团。照抄排行榜威能，对不上地图和阵容。",
+    "application": "败北后对照：你选的威能有没有解决当局反复出现的那个问题。",
     "kind": "教练笔记"
   },
   {
     "id": "guxue-winston-matchups",
-    "title": "按阵容看温斯顿的目标",
-    "author": "Guxue · 杭州闪电队",
+    "title": "孤雪-温斯顿-按阵容看温斯顿的目标",
+    "author": "孤雪 · OA-Guxue8",
     "sourceTitle": "杭武堂 · Guxue 教你玩温斯顿（2021）",
     "url": "https://www.bilibili.com/video/BV1hX4y1378W/",
     "role": "重装",
-    "heroes": ["温斯顿"],
-    "tags": ["对位", "阵容", "目标选择", "技能", "地图"],
+    "heroes": [
+      "温斯顿"
+    ],
+    "stage": "技能",
+    "tags": [
+      "对位",
+      "阵容",
+      "目标选择",
+      "技能",
+      "地图"
+    ],
     "principle": "孤雪在这期课程里分开讲英雄职责、技能、对位和地图。可从对位部分入手，比较不同目标的反制手段。",
     "application": "挑一波你试图切后排的团战，记录目标已经交出的技能，以及哪个敌人能赶来支援。回看时用这两条信息重选目标。",
     "kind": "观摩索引"
   },
   {
-    "id": "spilo-tank-engage",
-    "title": "等队友能出手再压进去",
-    "author": "Spilo",
-    "sourceTitle": "The Complete OW2 Tank Guide · Tank Fundamentals",
-    "url": "https://www.youtube.com/watch?v=1CrDa2pkKjA",
+    "id": "guxue-winston-newpatch",
+    "title": "孤雪-温斯顿-版本强势时更要算跳后的撤退",
+    "author": "孤雪 · OA-Guxue8",
+    "sourceTitle": "【Guxue】新版本温斯顿无敌了！",
+    "url": "https://www.bilibili.com/video/BV1hX4y1378W/",
     "role": "重装",
-    "heroes": [],
-    "tags": ["进场", "时机", "队友", "集火", "团战"],
-    "principle": "坦克压上时需要队友同步施压。队友还在转角后或正在绕侧翼时，对方能集中处理先到的坦克。",
-    "application": "在你第一次越过掩体时暂停。找一名能对同一片区域造成伤害的队友，并比较你们实际接敌的时间。",
+    "heroes": [
+      "温斯顿"
+    ],
+    "stage": "团战",
+    "tags": [
+      "版本",
+      "温斯顿",
+      "节奏"
+    ],
+    "principle": "数值好看不代表能无限跳。跳进去没有第二段计划，强势英雄也会送。",
+    "application": "跳进后五秒：你是打死了人，还是被风筝到死。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "guxue-winston-toilet",
+    "title": "孤雪-温斯顿-温斯顿罩子卡枪线再补伤害",
+    "author": "孤雪 · OA-Guxue8",
+    "sourceTitle": "【Guxue】学会这手温斯顿直接去国服上厕所",
+    "url": "https://www.bilibili.com/video/BV12uRMY3EF5",
+    "role": "重装",
+    "heroes": [
+      "温斯顿"
+    ],
+    "stage": "技能",
+    "tags": [
+      "对位",
+      "屏障",
+      "连拍",
+      "教学局"
+    ],
+    "principle": "罩子不是落地就扔。先挡住关键枪线，再在罩内补电爪和右键。",
+    "application": "交罩那一帧：罩挡住了谁的枪，你是否还在罩边输出。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "guxue-zarya-matchup",
+    "title": "孤雪-温斯顿-对查莉娅先耗气泡再切后排",
+    "author": "孤雪 · OA-Guxue8",
+    "sourceTitle": "【Guxue】对位zarya教学局",
+    "url": "https://www.bilibili.com/video/BV1hX4y1378W/",
+    "role": "重装",
+    "heroes": [
+      "温斯顿",
+      "查莉娅"
+    ],
+    "stage": "团战",
+    "tags": [
+      "对位",
+      "气泡",
+      "目标选择"
+    ],
+    "principle": "查莉娅有泡时硬切后排，泡会给你反伤窗口。先逼泡或绕开她的枪线。",
+    "application": "你进后排时对面气泡数量，以及是否被高能激光点中。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "kajor-tracer-blinks",
+    "title": "Kajor-猎空-猎空把闪现留到交火",
+    "author": "Kajor",
+    "sourceTitle": "The 60 Second Tracer Guide · Blinks and Timing",
+    "url": "https://www.reddit.com/r/OverwatchUniversity/comments/tgi84p",
+    "role": "输出",
+    "heroes": [
+      "猎空"
+    ],
+    "stage": "技能",
+    "tags": [
+      "闪现",
+      "站位",
+      "侧翼",
+      "进场",
+      "冷却"
+    ],
+    "principle": "借掩体走完绕后路线，给闪现留出回复时间。正面已经交火时，敌人更难同时照看侧翼。",
+    "application": "在侧翼第一枪处暂停，数可用闪现，确认正面是否已经交火。回看赶路时有没有一段能贴墙步行。",
     "kind": "教练笔记"
   },
   {
-    "id": "dva-matrix-direction",
-    "title": "矩阵朝向敌方来火",
+    "id": "ml7-ana-nano",
+    "title": "mL7-安娜-给激素找一个看得见的信号",
+    "author": "mL7",
+    "sourceTitle": "Master Ana VOD Review · 07:10，配合队友大招",
+    "url": "https://www.youtube.com/watch?v=h4liCHYydBI&t=430s",
+    "role": "辅助",
+    "heroes": [
+      "安娜"
+    ],
+    "stage": "大招",
+    "tags": [
+      "纳米激素",
+      "大招",
+      "配合",
+      "时机"
+    ],
+    "principle": "准备配合队友大招、又没有语音确认时，可以等对方开大的信号出现，再跟上纳米激素。",
+    "application": "把队友开大和激素命中标成两个时间点。检查目标当时是否已在攻击距离内，以及你是否一直看得到他。",
+    "kind": "教练笔记"
+  },
+  {
+    "id": "ml7-kiriko-cover",
+    "title": "mL7-雾子-雾子补完治疗再探身投刀",
+    "author": "mL7",
+    "sourceTitle": "Plat Support VOD Review · 01:35，雾子与渣客女王",
+    "url": "https://www.youtube.com/watch?v=_nbGxR0NCCc&t=95s",
+    "role": "辅助",
+    "heroes": [
+      "雾子"
+    ],
+    "stage": "落位",
+    "tags": [
+      "站位",
+      "治疗",
+      "掩体",
+      "苦无",
+      "火力"
+    ],
+    "principle": "在这段与渣客女王的配合中，mL7 建议雾子先确认女王的血量，利用治疗空隙投一两枚苦无，然后收回掩体。",
+    "application": "从被迫交瞬移的时刻向前看。检查自己的最后一次探身能否缩短，或能否从离墙角更近的位置投出苦无。",
+    "kind": "教练笔记"
+  },
+  {
+    "id": "patch-2026-09-08-dmon",
+    "title": "2026-09-08：D.Mon 护甲与武器下调",
     "author": "暴雪娱乐",
-    "sourceTitle": "D.Va · Defense Matrix",
-    "url": "https://overwatch.blizzard.com/en-us/heroes/dva/",
-    "role": "重装",
-    "heroes": ["D.Va"],
-    "tags": ["防御矩阵", "技能", "保护", "枪线"],
-    "principle": "防御矩阵能拦截 D.Va 面前作用区域内的射弹，它能覆盖的方向随朝向改变。",
-    "application": "在队友受到火力的瞬间暂停。从敌方枪口向队友画一条线，确认它是否穿过矩阵，以及矩阵是否及时打开。",
+    "sourceTitle": "Overwatch Retail Patch Notes – September 8, 2026",
+    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "role": "版本",
+    "heroes": [
+      "D.Va"
+    ],
+    "stage": "技能",
+    "tags": [
+      "补丁",
+      "D.Mon",
+      "护甲",
+      "版本"
+    ],
+    "principle": "该补丁下调 D.Mon 护甲与等离子刀、便携加农等数值，近战压制窗口变短。",
+    "application": "复盘 D.Mon 对局时对照：你是否还按旧数值硬抗火力。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "patch-2026-09-17-dmon",
+    "title": "2026-09-17：D.Mon 护甲与燃料再削",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Retail Patch Notes – September 17, 2026",
+    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "role": "版本",
+    "heroes": [
+      "D.Va"
+    ],
+    "stage": "技能",
+    "tags": [
+      "补丁",
+      "D.Mon",
+      "推进器",
+      "版本"
+    ],
+    "principle": "护甲与推进器燃料消耗再次调整，空中停留和对线容错下降。",
+    "application": "回看推进器耗尽时机，是否仍按改版前习惯滞空。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "patch-2026-11-05-ball",
+    "title": "2026-11-05：破坏球收钩速度上限提高",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Retail Patch Notes – November 5, 2026",
+    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/",
+    "role": "版本",
+    "heroes": [
+      "破坏球"
+    ],
+    "stage": "技能",
+    "tags": [
+      "补丁",
+      "破坏球",
+      "钩索",
+      "版本"
+    ],
+    "principle": "收钩基础速度上限提高 15%，友方加速也会抬高收钩速度上限。",
+    "application": "复盘滚球路线时，检查是否用上了更快的收钩窗口换角度。",
     "kind": "官方机制"
   },
   {
@@ -71,50 +296,19 @@
     "author": "Spilo",
     "sourceTitle": "DPS Positioning · The Complete Guide to the Fundamentals",
     "url": "https://www.reddit.com/r/OverwatchUniversity/comments/113t1ai/dps_positioning_the_complete_guide_to_the/",
-    "role": "输出",
+    "role": "综合",
     "heroes": [],
-    "tags": ["站位", "高台", "侧翼", "枪线", "掩体", "距离"],
+    "stage": "落位",
+    "tags": [
+      "站位",
+      "高台",
+      "侧翼",
+      "枪线",
+      "掩体",
+      "距离"
+    ],
     "principle": "从与队友不同的角度开火能分散敌方注意力。高台边缘和墙角能在对手转火时帮你迅速切断枪线。",
     "application": "比较正面和侧面两处可达位置，看看各自能打到谁、离掩体多远。下一波先试有掩体且武器能有效命中的那一处。",
-    "kind": "教练笔记"
-  },
-  {
-    "id": "kajor-tracer-blinks",
-    "title": "猎空把闪现留到交火",
-    "author": "Kajor",
-    "sourceTitle": "The 60 Second Tracer Guide · Blinks and Timing",
-    "url": "https://www.reddit.com/r/OverwatchUniversity/comments/tgi84p",
-    "role": "输出",
-    "heroes": ["猎空"],
-    "tags": ["闪现", "站位", "侧翼", "进场", "冷却"],
-    "principle": "借掩体走完绕后路线，给闪现留出回复时间。正面已经交火时，敌人更难同时照看侧翼。",
-    "application": "在侧翼第一枪处暂停，数可用闪现，确认正面是否已经交火。回看赶路时有没有一段能贴墙步行。",
-    "kind": "教练笔记"
-  },
-  {
-    "id": "ml7-ana-nano",
-    "title": "给激素找一个看得见的信号",
-    "author": "mL7",
-    "sourceTitle": "Master Ana VOD Review · 07:10，配合队友大招",
-    "url": "https://www.youtube.com/watch?v=h4liCHYydBI&t=430s",
-    "role": "支援",
-    "heroes": ["安娜"],
-    "tags": ["纳米激素", "大招", "配合", "时机"],
-    "principle": "准备配合队友大招、又没有语音确认时，可以等对方开大的信号出现，再跟上纳米激素。",
-    "application": "把队友开大和激素命中标成两个时间点。检查目标当时是否已在攻击距离内，以及你是否一直看得到他。",
-    "kind": "教练笔记"
-  },
-  {
-    "id": "ml7-kiriko-cover",
-    "title": "雾子补完治疗再探身投刀",
-    "author": "mL7",
-    "sourceTitle": "Plat Support VOD Review · 01:35，雾子与渣客女王",
-    "url": "https://www.youtube.com/watch?v=_nbGxR0NCCc&t=95s",
-    "role": "支援",
-    "heroes": ["雾子"],
-    "tags": ["站位", "治疗", "掩体", "苦无", "火力"],
-    "principle": "在这段与渣客女王的配合中，mL7 建议雾子先确认女王的血量，利用治疗空隙投一两枚苦无，然后收回掩体。",
-    "application": "从被迫交瞬移的时刻向前看。检查自己的最后一次探身能否缩短，或能否从离墙角更近的位置投出苦无。",
     "kind": "教练笔记"
   },
   {
@@ -123,24 +317,2386 @@
     "author": "Spilo",
     "sourceTitle": "How to Play Support Like a Pro in Overwatch 2",
     "url": "https://www.youtube.com/watch?v=MnbbDEQ7dK8",
-    "role": "支援",
+    "role": "综合",
     "heroes": [],
-    "tags": ["治疗", "视野", "掩体", "枪线", "时机"],
+    "stage": "视野",
+    "tags": [
+      "治疗",
+      "视野",
+      "掩体",
+      "枪线",
+      "时机"
+    ],
     "principle": "支援位可以在队友稳住的间隙给敌人制造压力。选择射程合适、能随时缩回掩体的位置，跟上前排接敌的时机。",
     "application": "在坦克刚开火的一刻暂停。标出自己能治疗的队友和能威胁的敌人，再看移到相邻墙角后会失去哪条视线。",
     "kind": "教练笔记"
   },
   {
-    "id": "yga-ult-economy",
-    "title": "下一轮要留下哪个大招",
-    "author": "Youth Gaming Association",
-    "sourceTitle": "YGA Esport Guidebook · Overwatch 2，Economy（书页 207）",
-    "url": "https://bytespeed.com/wp-content/uploads/2025/11/YGA-ESPORT-GUIDEBOOK-2025-26-Updated-11-5-25.pdf",
-    "role": "通用",
+    "id": "spilo-tank-engage",
+    "title": "等队友能出手再压进去",
+    "author": "Spilo",
+    "sourceTitle": "The Complete OW2 Tank Guide · Tank Fundamentals",
+    "url": "https://www.youtube.com/watch?v=1CrDa2pkKjA",
+    "role": "综合",
     "heroes": [],
-    "tags": ["终极技能", "大招", "资源", "团战", "反打"],
-    "principle": "同一波里连续交大，会影响下一波的选择。先想清楚哪一个用来开团、哪一个用于化解敌方反打。",
-    "application": "回看己方第二个大招生效的瞬间，写下当时仍在场的威胁，以及第一个大招已经解决了什么。",
+    "stage": "团战",
+    "tags": [
+      "进场",
+      "时机",
+      "队友",
+      "集火",
+      "团战"
+    ],
+    "principle": "坦克压上时需要队友同步施压。队友还在转角后或正在绕侧翼时，对方能集中处理先到的坦克。",
+    "application": "在你第一次越过掩体时暂停。找一名能对同一片区域造成伤害的队友，并比较你们实际接敌的时间。",
+    "kind": "教练笔记"
+  },
+  {
+    "id": "version-ability-ana",
+    "title": "安娜·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 安娜",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/ana/",
+    "role": "版本",
+    "heroes": [
+      "安娜"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "安娜"
+    ],
+    "principle": "生物枪；睡眠镖；生物手雷；纳米激素。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-anran",
+    "title": "安燃·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 安燃",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/anran/",
+    "role": "版本",
+    "heroes": [
+      "安燃"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "安燃"
+    ],
+    "principle": "地面压制型火力；以官方技能页核对冷却与位移。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-ashe",
+    "title": "艾什·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 艾什",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/ashe/",
+    "role": "版本",
+    "heroes": [
+      "艾什"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "艾什"
+    ],
+    "principle": "杠杆枪；动力滑铲；教练枪；B.O.B.。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-baptiste",
+    "title": "巴蒂斯特·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 巴蒂斯特",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/baptiste/",
+    "role": "版本",
+    "heroes": [
+      "巴蒂斯特"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "巴蒂斯特"
+    ],
+    "principle": "生化发射器；维生力场可被摧毁；浸液枪；增幅矩阵。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-bastion",
+    "title": "堡垒·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 堡垒",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/bastion/",
+    "role": "版本",
+    "heroes": [
+      "堡垒"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "堡垒"
+    ],
+    "principle": "搜索/炮台形态；A-36战术榴弹；重配置；坦克形态视配置。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-brigitte",
+    "title": "布丽吉塔·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 布丽吉塔",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/brigitte/",
+    "role": "版本",
+    "heroes": [
+      "布丽吉塔"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "布丽吉塔"
+    ],
+    "principle": "火箭链锤；恢复包；鞭抽；屏障盾；集结。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-cassidy",
+    "title": "卡西迪·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 卡西迪",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/cassidy/",
+    "role": "版本",
+    "heroes": [
+      "卡西迪"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "卡西迪"
+    ],
+    "principle": "维和者；闪光弹；滚地翻；午时已到。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-dmon",
+    "title": "D.Mon·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · D.Mon",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+    "role": "版本",
+    "heroes": [
+      "D.Mon"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "D.Mon"
+    ],
+    "principle": "机甲近战与便携火力；护甲与推进器燃料受版本数值约束；注意护甲与冷却改动。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-doomfist",
+    "title": "末日铁拳·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 末日铁拳",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/doomfist/",
+    "role": "版本",
+    "heroes": [
+      "末日铁拳"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "末日铁拳"
+    ],
+    "principle": "手炮；火箭重拳；上勾拳；震地波；毁天灭地。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-dva",
+    "title": "D.Va·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · D.Va",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/dva/",
+    "role": "版本",
+    "heroes": [
+      "D.Va"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "D.Va"
+    ],
+    "principle": "融合机炮；推进器；防御矩阵拦截射弹；微型飞弹；自爆与呼叫机甲。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-echo",
+    "title": "回声·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 回声",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/echo/",
+    "role": "版本",
+    "heroes": [
+      "回声"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "回声"
+    ],
+    "principle": "三角射击；飞行；黏性炸弹；聚焦光线；复制。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-emre",
+    "title": "埃姆雷·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 埃姆雷",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/emre/",
+    "role": "版本",
+    "heroes": [
+      "埃姆雷"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "埃姆雷"
+    ],
+    "principle": "虹吸冲击枪；赛博手雷；覆盖协议等；注意跳跃与重力版本调整。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-freja",
+    "title": "弗蕾雅·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 弗蕾雅",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/freja/",
+    "role": "版本",
+    "heroes": [
+      "弗蕾雅"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "弗蕾雅"
+    ],
+    "principle": "缚锤射击；快速冲刺；精确瞄准；上升气流。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-genji",
+    "title": "源氏·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 源氏",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/genji/",
+    "role": "版本",
+    "heroes": [
+      "源氏"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "源氏"
+    ],
+    "principle": "手里剑；影武；飞镖；斩（版本可能调整技能位）。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-hanzo",
+    "title": "半藏·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 半藏",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/hanzo/",
+    "role": "版本",
+    "heroes": [
+      "半藏"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "半藏"
+    ],
+    "principle": "风暴之弓；音速箭；裂箭；龙魂击。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-hazard",
+    "title": "骇灾·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 骇灾",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/hazard/",
+    "role": "版本",
+    "heroes": [
+      "骇灾"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "骇灾"
+    ],
+    "principle": "版本机动输出工具组；以官方技能页核对位移与爆发。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-illari",
+    "title": "伊拉锐·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 伊拉锐",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/illari/",
+    "role": "版本",
+    "heroes": [
+      "伊拉锐"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "伊拉锐"
+    ],
+    "principle": "太阳步枪；治疗阳炎；爆发阳炎；夺日。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-jetpack-cat",
+    "title": "飞天猫·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 飞天猫",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+    "role": "版本",
+    "heroes": [
+      "飞天猫"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "飞天猫"
+    ],
+    "principle": "机动坦型工具组；以版本技能页为准核对位移与护盾。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-junker-queen",
+    "title": "渣客女王·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 渣客女王",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/junker-queen/",
+    "role": "版本",
+    "heroes": [
+      "渣客女王"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "渣客女王"
+    ],
+    "principle": "锯齿利刃与砍刀；狂风猛刮；指令：欢呼；屠戮。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-junkrat",
+    "title": "狂鼠·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 狂鼠",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/junkrat/",
+    "role": "版本",
+    "heroes": [
+      "狂鼠"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "狂鼠"
+    ],
+    "principle": "榴弹发射器；震荡地雷；捕兽夹；炸弹轮胎。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-juno",
+    "title": "朱诺·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 朱诺",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/juno/",
+    "role": "版本",
+    "heroes": [
+      "朱诺"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "朱诺"
+    ],
+    "principle": "双脉冲空对地火炮；高抛护盾；环轨萤火；轨道射线。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-kiriko",
+    "title": "雾子·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 雾子",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/kiriko/",
+    "role": "版本",
+    "heroes": [
+      "雾子"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "雾子"
+    ],
+    "principle": "苦无；治疗护符；瞬步；清净之铃；狐灵。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-lifeweaver",
+    "title": "生命之梭·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 生命之梭",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/lifeweaver/",
+    "role": "版本",
+    "heroes": [
+      "生命之梭"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "生命之梭"
+    ],
+    "principle": "治愈之花；生命之握；花台；树潮。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-lucio",
+    "title": "卢西奥·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 卢西奥",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/lucio/",
+    "role": "版本",
+    "heroes": [
+      "卢西奥"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "卢西奥"
+    ],
+    "principle": "音速放大器治疗/加速切换；音波墙；音障。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-mauga",
+    "title": "毛加·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 毛加",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/mauga/",
+    "role": "版本",
+    "heroes": [
+      "毛加"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "毛加"
+    ],
+    "principle": "链式机枪；烈焰冲刺；心脏过载；笼中野兽。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-mei",
+    "title": "美·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 美",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/mei/",
+    "role": "版本",
+    "heroes": [
+      "美"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "美"
+    ],
+    "principle": "喷霜器；急冻；冰墙；暴雪。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-mercy",
+    "title": "天使·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 天使",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/mercy/",
+    "role": "版本",
+    "heroes": [
+      "天使"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "天使"
+    ],
+    "principle": "天使权杖；守护天使；复活；安魂祈祷。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-moira",
+    "title": "莫伊拉·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 莫伊拉",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/moira/",
+    "role": "版本",
+    "heroes": [
+      "莫伊拉"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "莫伊拉"
+    ],
+    "principle": "生化之握；消散；生化之球；聚合射线。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-orisa",
+    "title": "奥丽莎·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 奥丽莎",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/orisa/",
+    "role": "版本",
+    "heroes": [
+      "奥丽莎"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "奥丽莎"
+    ],
+    "principle": "增压熔融炮；投枪；御马蛮力；防御力场类工具视版本配置。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-pharah",
+    "title": "法老之鹰·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 法老之鹰",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/pharah/",
+    "role": "版本",
+    "heroes": [
+      "法老之鹰"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "法老之鹰"
+    ],
+    "principle": "火箭发射器；跳跃喷射；震荡冲击；弹幕。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-ramattra",
+    "title": "拉玛刹·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 拉玛刹",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
+    "role": "版本",
+    "heroes": [
+      "拉玛刹"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "拉玛刹"
+    ],
+    "principle": "虚空加速器/法杖形态切换；吞噬旋涡；虚空屏障；歼灭。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-reaper",
+    "title": "死神·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 死神",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/reaper/",
+    "role": "版本",
+    "heroes": [
+      "死神"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "死神"
+    ],
+    "principle": "地狱火霰弹枪；幽灵形态；影之步；死亡绽放。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-reinhardt",
+    "title": "莱因哈特·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 莱因哈特",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/reinhardt/",
+    "role": "版本",
+    "heroes": [
+      "莱因哈特"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "莱因哈特"
+    ],
+    "principle": "火箭锤；屏障力场；冲锋；烈焰打击；大地粉碎。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-roadhog",
+    "title": "路霸·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 路霸",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/roadhog/",
+    "role": "版本",
+    "heroes": [
+      "路霸"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "路霸"
+    ],
+    "principle": "爆裂枪；钩链；废品压缩器可吸弹反击；吸血（治疗）。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-sierra",
+    "title": "西拉·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 西拉",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/sierra/",
+    "role": "版本",
+    "heroes": [
+      "西拉"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "西拉"
+    ],
+    "principle": "螺旋步枪持续开火提高精度；追踪弹标记目标后步枪子弹可追踪被标记者；震地手雷；锚点无人机可改变位置；大招开路先锋部署轰炸无人机。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-sigma",
+    "title": "西格玛·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 西格玛",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/sigma/",
+    "role": "版本",
+    "heroes": [
+      "西格玛"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "西格玛"
+    ],
+    "principle": "超能之球；实验屏障；动能汲取吸星；质量吸附击倒；引力崩坏。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-sojourn",
+    "title": "索杰恩·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 索杰恩",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/sojourn/",
+    "role": "版本",
+    "heroes": [
+      "索杰恩"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "索杰恩"
+    ],
+    "principle": "轨道射电；强力滑动；干扰击；超能之龙。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-soldier-76",
+    "title": "士兵：76·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 士兵：76",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/soldier-76/",
+    "role": "版本",
+    "heroes": [
+      "士兵：76"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "士兵：76"
+    ],
+    "principle": "重型脉冲步枪；螺旋飞弹；疾跑；生物力场；战术目镜。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-sombra",
+    "title": "黑影·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 黑影",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/sombra/",
+    "role": "版本",
+    "heroes": [
+      "黑影"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "黑影"
+    ],
+    "principle": "现版本支援向黑客；在线修复治疗；赛博空间削弱敌人；隐身与位移器仍可用于走位。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-symmetra",
+    "title": "秩序之光·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 秩序之光",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/symmetra/",
+    "role": "版本",
+    "heroes": [
+      "秩序之光"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "秩序之光"
+    ],
+    "principle": "光子发射器；哨戒塔；传送面板；光子屏障。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-torbjorn",
+    "title": "托比昂·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 托比昂",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/torbjorn/",
+    "role": "版本",
+    "heroes": [
+      "托比昂"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "托比昂"
+    ],
+    "principle": "铆钉枪；锻造锤；部署炮台；过载；熔火核心。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-tracer",
+    "title": "猎空·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 猎空",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/tracer/",
+    "role": "版本",
+    "heroes": [
+      "猎空"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "猎空"
+    ],
+    "principle": "脉冲双枪；闪现；闪回；脉冲炸弹。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-vendetta",
+    "title": "斩仇·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 斩仇",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+    "role": "版本",
+    "heroes": [
+      "斩仇"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "斩仇"
+    ],
+    "principle": "近战与剑气类工具；旋风疾步等异能受版本调整；以官方技能页为准。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-vendetta-blood",
+    "title": "血律·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 血律",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/vendetta-blood/",
+    "role": "版本",
+    "heroes": [
+      "血律"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "血律"
+    ],
+    "principle": "永生权杖中远距离治疗与伤害；蝙蝠无人机强化队友；灌注强化技能；大招重分配双方生命值。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-vengeance",
+    "title": "死怨·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 死怨",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/vengeance/",
+    "role": "版本",
+    "heroes": [
+      "死怨"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "死怨"
+    ],
+    "principle": "双枪连射与高机动冲刺；摩托冲阵；以官方技能页核对绕后与爆发。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-venture",
+    "title": "探奇·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 探奇",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/venture/",
+    "role": "版本",
+    "heroes": [
+      "探奇"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "探奇"
+    ],
+    "principle": "智能钻头与地雷；钻地位移；以官方技能页核对爆发窗口。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-widowmaker",
+    "title": "黑百合·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 黑百合",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/widowmaker/",
+    "role": "版本",
+    "heroes": [
+      "黑百合"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "黑百合"
+    ],
+    "principle": "吻吻枪；钩索；剧毒地雷；红外侦测。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-winston",
+    "title": "温斯顿·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 温斯顿",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/winston/",
+    "role": "版本",
+    "heroes": [
+      "温斯顿"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "温斯顿"
+    ],
+    "principle": "特斯拉炮近距持续伤害；喷射背包跳入与落地震荡；屏障发射器投放球形护盾；原始暴怒强化近战。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-wrecking-ball",
+    "title": "破坏球·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 破坏球",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/wrecking-ball/",
+    "role": "版本",
+    "heroes": [
+      "破坏球"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "破坏球"
+    ],
+    "principle": "四轮机枪；抓钩甩动加速；适应性护盾；地雷场；碾压球形态撞击。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-wuyang",
+    "title": "无漾·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 无漾",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/wuyang/",
+    "role": "版本",
+    "heroes": [
+      "无漾"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "无漾"
+    ],
+    "principle": "风暴与洪流相关工具组；以官方技能页核对位移与控场。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-zarya",
+    "title": "查莉娅·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 查莉娅",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/zarya/",
+    "role": "版本",
+    "heroes": [
+      "查莉娅"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "查莉娅"
+    ],
+    "principle": "粒子炮光束/榴弹；粒子屏障与投影屏障积攒能量；重力喷涌。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-ability-zenyatta",
+    "title": "禅雅塔·当前版本技能要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Heroes · 禅雅塔",
+    "url": "https://overwatch.blizzard.com/en-us/heroes/zenyatta/",
+    "role": "版本",
+    "heroes": [
+      "禅雅塔"
+    ],
+    "stage": "技能",
+    "tags": [
+      "版本",
+      "技能",
+      "官方机制",
+      "禅雅塔"
+    ],
+    "principle": "毁灭宝珠；谐球体；踢腿；超然入定。复盘时以官方技能页与最新补丁为准。",
+    "application": "回看交技能前后两秒：该技能是否打在它设计要解决的问题上（进场、保命、打断、收割）。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-伊利奥斯",
+    "title": "伊利奥斯·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 伊利奥斯",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "伊利奥斯"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "占领",
+      "伊利奥斯"
+    ],
+    "principle": "废墟/井/灯塔三图高台差异大；先抢垂直优势再换点。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-努巴尼",
+    "title": "努巴尼·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 努巴尼",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "努巴尼"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "努巴尼"
+    ],
+    "principle": "A 点侧路与二楼压力大；推车段注意直角拐弯被夹击。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-南极半岛",
+    "title": "南极半岛·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 南极半岛",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "南极半岛"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "占领",
+      "南极半岛"
+    ],
+    "principle": "实验室/冰崖等点垂直空间大；注意坠落与高台互换。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-哈瓦那",
+    "title": "哈瓦那·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 哈瓦那",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "哈瓦那"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "哈瓦那"
+    ],
+    "principle": "长直线与侧街；注意狙击手与侧翼。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-国王大道",
+    "title": "国王大道·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 国王大道",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "国王大道"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "国王大道"
+    ],
+    "principle": "A 点雕像与拱门是温斯顿类英雄常见过渡点；注意二楼窗口与楼梯抢位。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-埃斯佩兰萨",
+    "title": "埃斯佩兰萨·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 埃斯佩兰萨",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "埃斯佩兰萨"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "推车",
+      "埃斯佩兰萨"
+    ],
+    "principle": "推车路线弯道多；提前占弯角高台。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-多拉多",
+    "title": "多拉多·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 多拉多",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "多拉多"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "多拉多"
+    ],
+    "principle": "车身两侧高台与斜角比正门硬撞更安全；后半段注意桥面枪线。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-好莱坞",
+    "title": "好莱坞·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 好莱坞",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "好莱坞"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "好莱坞"
+    ],
+    "principle": "摄影棚内外转点多；占点后卡门框比空地对枪更稳。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-尼泊尔",
+    "title": "尼泊尔·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 尼泊尔",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "尼泊尔"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "占领",
+      "尼泊尔"
+    ],
+    "principle": "圣坛/村庄等近点混战多；近战坦更吃墙角。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-帕拉伊苏",
+    "title": "帕拉伊苏·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 帕拉伊苏",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "帕拉伊苏"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "帕拉伊苏"
+    ],
+    "principle": "海岸与坡道；注意高低差换枪线。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-斗兽场",
+    "title": "斗兽场·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 斗兽场",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "斗兽场"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "推车",
+      "斗兽场"
+    ],
+    "principle": "环形空间；卡推车两侧夹角，避免被绕圈。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-暴雪世界",
+    "title": "暴雪世界·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 暴雪世界",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "暴雪世界"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "暴雪世界"
+    ],
+    "principle": "园区多层；滑梯与室内转点需提前规划落点。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-渣客镇",
+    "title": "渣客镇·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 渣客镇",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "渣客镇"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "渣客镇"
+    ],
+    "principle": "近战友好的狭窄巷道；爆炸物英雄收益高。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-漓江塔",
+    "title": "漓江塔·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 漓江塔",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "漓江塔"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "占领",
+      "漓江塔"
+    ],
+    "principle": "夜市/控制点周围高台与转点多；占点后优先卡楼梯与侧门。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-监测站-格里姆火山",
+    "title": "监测站：格里姆火山·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 监测站：格里姆火山",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "监测站：格里姆火山"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "监测站：格里姆火山"
+    ],
+    "principle": "冰火地形与监狱结构；开阔点位依赖掩体与罩类技能。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-监测站-直布罗陀",
+    "title": "监测站：直布罗陀·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 监测站：直布罗陀",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "监测站：直布罗陀"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "监测站：直布罗陀"
+    ],
+    "principle": "开局高台与侧路绕后常见；落点要能立刻进掩体。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-直布罗陀监测站",
+    "title": "直布罗陀监测站·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 直布罗陀监测站",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "直布罗陀监测站"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "直布罗陀监测站"
+    ],
+    "principle": "与监测站：直布罗陀同图；核对开局高台与侧路。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-绿洲城",
+    "title": "绿洲城·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 绿洲城",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "绿洲城"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "占领",
+      "绿洲城"
+    ],
+    "principle": "大学等高台视野好；注意被绕后切后排。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-艾兴瓦尔德",
+    "title": "艾兴瓦尔德·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 艾兴瓦尔德",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "艾兴瓦尔德"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "艾兴瓦尔德"
+    ],
+    "principle": "城堡门与桥是交战瓶颈；侧门绕后改变枪线。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-里阿尔托",
+    "title": "里阿尔托·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 里阿尔托",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "里阿尔托"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "里阿尔托"
+    ],
+    "principle": "桥面与水道两侧高台；注意长距离狙击线。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-釜山",
+    "title": "釜山·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 釜山",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "釜山"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "占领",
+      "釜山"
+    ],
+    "principle": "三控制点轮换；掉点后快速转点比恋战重要。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-阿德勒斯布鲁恩",
+    "title": "阿德勒斯布鲁恩·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 阿德勒斯布鲁恩",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "阿德勒斯布鲁恩"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "阿德勒斯布鲁恩"
+    ],
+    "principle": "雪地开阔与建筑掩体交替；远程英雄更吃掩体。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-霓虹枢纽",
+    "title": "霓虹枢纽·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 霓虹枢纽",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "霓虹枢纽"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "攻击/护送",
+      "霓虹枢纽"
+    ],
+    "principle": "东京街巷与高台交错；占点后沿巷道推车，留意暗巷绕后。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "version-map-香巴里寺院",
+    "title": "香巴里寺院·地图落位要点",
+    "author": "暴雪娱乐",
+    "sourceTitle": "Overwatch Maps · 香巴里寺院",
+    "url": "https://overwatch.blizzard.com/en-us/maps/",
+    "role": "版本",
+    "heroes": [],
+    "maps": [
+      "香巴里寺院"
+    ],
+    "stage": "落位",
+    "tags": [
+      "版本",
+      "地图",
+      "护送",
+      "香巴里寺院"
+    ],
+    "principle": "多层平台与落差；跳跃英雄要预留撤退高度。",
+    "application": "暂停在你第一次进点或过角处：对照本图关键高台/门框，你的落点能不能一步进掩体。",
+    "kind": "官方机制"
+  },
+  {
+    "id": "wang-aim-position-general",
+    "title": "先有掩体再交火，别在空地对枪",
+    "author": "人上人老王",
+    "sourceTitle": "OW网课系列 · 站位与交火习惯",
+    "url": "https://www.bilibili.com/video/BV1tA4y1Q7ik/",
+    "role": "综合",
+    "heroes": [],
+    "stage": "落位",
+    "tags": [
+      "瞄准",
+      "站位",
+      "掩体",
+      "枪线"
+    ],
+    "principle": "能打到人的位置很多，能打完还能缩回去的位置很少。优先选后者。",
+    "application": "每次对枪暂停：你身后半秒内能不能进墙。",
+    "kind": "教练笔记"
+  },
+  {
+    "id": "wang-ana-class",
+    "title": "人上人老王-安娜-安娜睡镖优先打断关键技能",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】安娜篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "辅助",
+    "heroes": [
+      "安娜"
+    ],
+    "stage": "技能",
+    "tags": [
+      "麻醉镖",
+      "纳米激素",
+      "生物枪"
+    ],
+    "principle": "睡眠留给正在开大或正在切人的目标。满血前排乱镖，关键技能会照常交。",
+    "application": "敌方开大前后三秒：你的睡镖交在谁身上。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-ashe-class",
+    "title": "人上人老王-艾什-艾什滑铲留给换位，不拿来追残",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】艾什篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "艾什"
+    ],
+    "stage": "落位",
+    "tags": [
+      "动力滑铲",
+      "教练枪",
+      "高台"
+    ],
+    "principle": "动力滑铲是你的换点和保命。追残交掉，被反击时只能站桩。",
+    "application": "死亡前回看滑铲是否还在，以及高台是否还有第二条退路。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-ball-class",
+    "title": "人上人老王-破坏球-破坏球先选落点再甩钩",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】破坏球篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "破坏球"
+    ],
+    "stage": "落位",
+    "tags": [
+      "钩索",
+      "落位",
+      "滚球",
+      "进场"
+    ],
+    "principle": "钩索落地要能立刻打到人，或立刻滚回掩体。空钩进开阔地等于送人头。",
+    "application": "回看每一次甩钩：落地三秒内有没有输出或撤离路径。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-baptiste-class",
+    "title": "人上人老王-巴蒂斯特-巴蒂灯留给致命窗口",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】巴蒂篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "辅助",
+    "heroes": [
+      "巴蒂斯特"
+    ],
+    "stage": "技能",
+    "tags": [
+      "维生力场",
+      "灯",
+      "脚步"
+    ],
+    "principle": "维生力场扛爆发和大招。提前亮灯，对面会等灯消失再交。",
+    "application": "敌方大招命中时你的灯在不在场，以及灯有没有罩到被集火的人。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-bastion-class",
+    "title": "人上人老王-堡垒-堡垒炮台形态要有掩体可缩",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】堡垒篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "堡垒"
+    ],
+    "stage": "落位",
+    "tags": [
+      "炮台形态",
+      "掩体",
+      "距离"
+    ],
+    "principle": "变形输出点旁边必须有墙或落差。空地开炮台，对方一个技能就能换掉你。",
+    "application": "你被集火时：一步内能不能进掩体。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-brig-class",
+    "title": "人上人老王-布丽吉塔-锤妹先护被切的人，再追输出",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】锤妹篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "辅助",
+    "heroes": [
+      "布丽吉塔"
+    ],
+    "stage": "团战",
+    "tags": [
+      "鞭抽",
+      "护甲包",
+      "近战"
+    ],
+    "principle": "鞭抽和护甲优先给正在被摸的队友。自己冲出去换输出，队里会瞬间少一层近战保护。",
+    "application": "被切那波暂停：你的鞭抽打在谁身上，护甲包扔给了谁。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-cassidy-class",
+    "title": "人上人老王-卡西迪-卡西迪闪光弹打在接战瞬间",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】卡西迪/麦克雷篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "卡西迪"
+    ],
+    "stage": "技能",
+    "tags": [
+      "闪光弹",
+      "滚地",
+      "扇形"
+    ],
+    "principle": "闪光弹用来开团或反打近身，不拿来探草丛。交完没有跟枪，等于白闪。",
+    "application": "闪光命中后一秒内你有没有输出或滚地脱身。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-combo-wheelchair",
+    "title": "阵容先保证有人能开团有人能收",
+    "author": "人上人老王",
+    "sourceTitle": "【轮椅教学】版本最无脑零手法上分组合",
+    "url": "https://www.bilibili.com/video/BV16mPfzFELA/",
+    "role": "综合",
+    "heroes": [],
+    "stage": "团战",
+    "tags": [
+      "阵容",
+      "配合",
+      "团战",
+      "版本"
+    ],
+    "principle": "无脑组合也要分清谁负责过角、谁负责点人。五个都能打但不齐活，照样输。",
+    "application": "回看败北团：开团的人进场时，收割位是否已经就位。",
+    "kind": "教练笔记"
+  },
+  {
+    "id": "wang-doom-class",
+    "title": "人上人老王-末日铁拳-铁拳上勾拳留给脱身或收割",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】铁拳篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "末日铁拳"
+    ],
+    "stage": "技能",
+    "tags": [
+      "上勾拳",
+      "震地",
+      "进场"
+    ],
+    "principle": "进场用震地和子弹，上勾拳留着打断或把自己打回高台。一套交完还在平地，下一波你就没位移。",
+    "application": "每次暴毙回看：上勾拳是不是提前交在伤害技能上了。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-dva-class",
+    "title": "人上人老王-D.Va-D.Va矩阵对枪口，不对自己脚下",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】Dva篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "D.Va"
+    ],
+    "stage": "技能",
+    "tags": [
+      "防御矩阵",
+      "推进器",
+      "吃弹"
+    ],
+    "principle": "矩阵要挡住正在飞向队友的弹道。对着空气或地板开，等于没交。",
+    "application": "队友掉血瞬间：矩阵朝向是否穿过敌方枪线。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-echo-class",
+    "title": "人上人老王-回声-回声聚焦光线打在减益之后",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】回声篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "回声"
+    ],
+    "stage": "技能",
+    "tags": [
+      "飞粘",
+      "聚焦光线",
+      "复制"
+    ],
+    "principle": "先飞粘或炸开，再开聚焦。光杆聚焦打满血目标，伤害和时间都不划算。",
+    "application": "开聚焦那一帧：目标身上有没有你的粘弹或爆炸标记。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-genji-class",
+    "title": "人上人老王-源氏-源氏弹刀接冲刺，不空放",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】源氏篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "源氏"
+    ],
+    "stage": "技能",
+    "tags": [
+      "弹刀",
+      "冲刺",
+      "侧翼"
+    ],
+    "principle": "弹到关键弹道再进场。没有弹刀窗口就耐心耗，别每次都闪进人群。",
+    "application": "每次冲刺进场：前一秒有没有成功弹刀。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-hanzo-class",
+    "title": "人上人老王-半藏-半藏先探信息再站死角",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】半藏篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "半藏"
+    ],
+    "stage": "落位",
+    "tags": [
+      "侧翼",
+      "音速箭",
+      "高台"
+    ],
+    "principle": "音速箭探完再决定占哪个高台。盲站熟悉点位，容易被绕后反杀。",
+    "application": "你被秒杀前有没有先放声波。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-junkrat-class",
+    "title": "人上人老王-狂鼠-狂鼠地雷留给自己保命或封路",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】狂鼠篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "狂鼠"
+    ],
+    "stage": "落位",
+    "tags": [
+      "手雷",
+      "地雷",
+      "侧角",
+      "落位"
+    ],
+    "principle": "地雷先保证你能活着继续扔雷。封路和追人排在后面。",
+    "application": "你暴毙前一帧：地雷在哪、能不能把自己炸回掩体。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-lucio-class",
+    "title": "人上人老王-卢西奥-卢西奥加速留给集合和开团",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】DJ篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "辅助",
+    "heroes": [
+      "卢西奥"
+    ],
+    "stage": "团战",
+    "tags": [
+      "加速",
+      "治愈",
+      "墙骑"
+    ],
+    "principle": "散了用加速收拢，开团用加速压过角。团战中段乱切歌曲，队友跟不上节奏。",
+    "application": "坦克过角那一秒：你是加速还是治疗，人有没有到齐。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-mei-class",
+    "title": "人上人老王-美-冰墙用来切枪线或保人，不是堵自己",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】小美篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "美"
+    ],
+    "stage": "技能",
+    "tags": [
+      "冰墙",
+      "急冻",
+      "分割"
+    ],
+    "principle": "墙要切断敌方后排枪线，或把被切的队友隔开。把自己和奶妈隔开等于送。",
+    "application": "每次交墙：墙两侧分别是谁，你的治疗还看不看得见你。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-mercy-class",
+    "title": "人上人老王-天使-天使飞向有掩体的输出",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】天使篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "辅助",
+    "heroes": [
+      "天使"
+    ],
+    "stage": "落位",
+    "tags": [
+      "守护天使",
+      "复活",
+      "光束"
+    ],
+    "principle": "传输目标要能让你落地有墙。飞到空地输出身上，两人一起被瞄。",
+    "application": "每次落地：左右一步有没有掩体。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-moira-class",
+    "title": "人上人老王-莫伊拉-莫伊拉消散留给保命，不拿来追人",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】莫伊拉篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "辅助",
+    "heroes": [
+      "莫伊拉"
+    ],
+    "stage": "技能",
+    "tags": [
+      "消散",
+      "生化之球",
+      "治疗"
+    ],
+    "principle": "消散是你唯一的硬保命。用来追残血，下一波被切就只能站着死。",
+    "application": "你死亡前消散是否还在冷却。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-orisa-class",
+    "title": "人上人老王-奥丽莎-奥丽莎投枪打断再前压",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】奥丽莎篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "奥丽莎"
+    ],
+    "stage": "落位",
+    "tags": [
+      "投枪",
+      "御马",
+      "前压"
+    ],
+    "principle": "先用投枪逼出位移或打断关键技能，再开御马往前挤。光杆冲车容易被风筝。",
+    "application": "开御马前一秒投枪有没有命中或逼出技能。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-pharah-class",
+    "title": "人上人老王-法老之鹰-法鸡燃料留给横向走位",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】法鸡篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "法老之鹰"
+    ],
+    "stage": "落位",
+    "tags": [
+      "轰炸",
+      "燃料",
+      "高空"
+    ],
+    "principle": "别把燃料耗在直线升高。横向变线更难被狙击预瞄。",
+    "application": "你被点掉时燃料剩余，以及有没有横向位移。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-reaper-class",
+    "title": "人上人老王-死神-死神影之步进有掩体的身侧",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】死神篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "死神"
+    ],
+    "stage": "落位",
+    "tags": [
+      "幽灵形态",
+      "影之步",
+      "近战"
+    ],
+    "principle": "传送点要能立刻打到人，也能幽灵撤。传到开阔地正脸，等于送礼。",
+    "application": "传送落地三秒：有没有输出，幽灵还在不在。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-reinhardt-class",
+    "title": "人上人老王-莱因哈特-大锤先磨盾再找落锤角度",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】大锤篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "莱因哈特"
+    ],
+    "stage": "团战",
+    "tags": [
+      "屏障",
+      "冲锋",
+      "落锤"
+    ],
+    "principle": "盾不是永久的。留一点盾厚转身或落锤，比把盾磨穿再硬冲更稳。",
+    "application": "你开冲或落锤时剩余盾量，以及身后队友是否跟得上。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-roadhog-class",
+    "title": "人上人老王-路霸-路霸钩子打隔离目标",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】路霸篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "路霸"
+    ],
+    "stage": "技能",
+    "tags": [
+      "钩子",
+      "吸气",
+      "一侧"
+    ],
+    "principle": "钩有治疗或屏障保护的人，容易反被集火。先钩落单或技能空窗的人。",
+    "application": "每次空钩或钩死后：目标当时有没有奶和位移。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-sigma-class",
+    "title": "人上人老王-西格玛-西格玛屏障挡枪线，吸星挡爆发",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】西格玛篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "西格玛"
+    ],
+    "stage": "技能",
+    "tags": [
+      "实验屏障",
+      "吸星",
+      "石块"
+    ],
+    "principle": "持续火力用罩子磨，爆发和大招用吸星。两者同一秒交完，下一波你没有工具。",
+    "application": "你暴毙前：屏障和吸星哪个已经空了，空的时机对不对。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-soldier-class",
+    "title": "人上人老王-士兵：76-士兵飞弹留给站桩或大招窗口",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】士兵76篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "士兵：76"
+    ],
+    "stage": "落位",
+    "tags": [
+      "螺旋飞弹",
+      "疾跑",
+      "高台"
+    ],
+    "principle": "螺旋飞弹打移动目标浪费大。等人站桩、开大或被控住再交。",
+    "application": "每次交飞弹回看目标是否在位移。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-sombra-class",
+    "title": "人上人老王-黑影-黑影先黑关键技能再逼脸",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】黑影篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "黑影"
+    ],
+    "stage": "技能",
+    "tags": [
+      "黑客",
+      "隐身",
+      "位移器"
+    ],
+    "principle": "黑客优先奶妈大招、矩阵、屏障类技能。黑完再压，比隐身乱扫更值钱。",
+    "application": "你每次开打：前两秒黑了谁，对方关键技能还在不在。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-symm-class",
+    "title": "人上人老王-秩序之光-哨戒塔放在绕后必经处",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】秩序之光篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "秩序之光"
+    ],
+    "stage": "技能",
+    "tags": [
+      "哨戒塔",
+      "传送面",
+      "光子屏障"
+    ],
+    "principle": "塔要打到想摸后排的人。放在自己面前好看但没用。",
+    "application": "被绕后击杀时：附近有没有你的塔在输出。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-tori-class",
+    "title": "人上人老王-托比昂-炮台放在你能补枪的侧角",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】托比昂篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "托比昂"
+    ],
+    "stage": "落位",
+    "tags": [
+      "炮台",
+      "热熔枪",
+      "落位"
+    ],
+    "principle": "炮台不是诱饵那么简单，要和你的热熔枪打同一片区域。你看不见的炮台等于没有。",
+    "application": "炮台被拆时你在哪：能不能立刻补伤害或换点。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-tracer-class",
+    "title": "人上人老王-猎空-猎空闪现留给交火，不拿来赶路",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】猎空篇",
+    "url": "https://www.bilibili.com/video/BV1tA4y1Q7ik/",
+    "role": "输出",
+    "heroes": [
+      "猎空"
+    ],
+    "stage": "技能",
+    "tags": [
+      "闪现",
+      "回忆",
+      "侧翼",
+      "技能"
+    ],
+    "principle": "绕后尽量贴墙步行，给闪现留冷却。正面已经开打时再进场，敌人更难回头照顾你。",
+    "application": "在侧翼第一枪处暂停，数可用闪现，并确认正面是否已经交火。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-widow-class",
+    "title": "人上人老王-黑百合-黑百合每枪后准备好钩走",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】黑百合篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "输出",
+    "heroes": [
+      "黑百合"
+    ],
+    "stage": "落位",
+    "tags": [
+      "钩索",
+      "狙击",
+      "高台"
+    ],
+    "principle": "开枪就暴露。钩索要预留给被发现后的撤离，不是用来抢奇怪角度。",
+    "application": "你被突脸时钩索在不在，预瞄点有没有第二落点。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-winston-class",
+    "title": "人上人老王-温斯顿-温斯顿第一跳要对着能打的后排",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】温斯顿篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/?p=2",
+    "role": "重装",
+    "heroes": [
+      "温斯顿"
+    ],
+    "stage": "落位",
+    "tags": [
+      "喷射背包",
+      "屏障",
+      "进场"
+    ],
+    "principle": "起跳前先看后排站位和队友枪线。落地立刻交罩，别在空地耗盾。",
+    "application": "标出起跳前、落地、交罩三帧，看落点有没有掩体和跟枪。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-winston-replay",
+    "title": "人上人老王-温斯顿-温斯顿的第一跳",
+    "author": "人上人老王",
+    "sourceTitle": "OW归来：网课 · 温斯顿篇上，第 2 集「猩猩实战讲解」",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/?p=2",
+    "role": "重装",
+    "heroes": [
+      "温斯顿"
+    ],
+    "stage": "落位",
+    "tags": [
+      "落位",
+      "进场",
+      "喷射背包",
+      "屏障"
+    ],
+    "principle": "这节实战课适合对照同一次起跳前、落地时和交罩后的三个画面。",
+    "application": "在自己的录像里标出落点、最近的掩体和当时能跟枪的队友，再看老王的落点给他留下了哪些选择。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-zarya-class",
+    "title": "人上人老王-查莉娅-查莉娅气泡打在伤害进来的瞬间",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】查莉娅篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "重装",
+    "heroes": [
+      "查莉娅"
+    ],
+    "stage": "技能",
+    "tags": [
+      "粒子屏障",
+      "气泡",
+      "能量"
+    ],
+    "principle": "预泡容易被耗空。看见集火或技能出手再交，能量涨得更快。",
+    "application": "交气泡前后半秒：你或队友是否正在掉血。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "wang-zen-class",
+    "title": "人上人老王-禅雅塔-和尚站在能看见前排又有墙的位置",
+    "author": "人上人老王",
+    "sourceTitle": "【OW网课】和尚篇",
+    "url": "https://www.bilibili.com/video/BV1Td4y1w7qM/",
+    "role": "辅助",
+    "heroes": [
+      "禅雅塔"
+    ],
+    "stage": "落位",
+    "tags": [
+      "谐球体",
+      "踢腿",
+      "站位"
+    ],
+    "principle": "谐球要挂得上，自己又不能被闪进秒。贴墙斜角比站在队伍正中间更活。",
+    "application": "你被切时：左右一步有没有墙，谐球还在不在前排。",
+    "kind": "观摩索引"
+  },
+  {
+    "id": "winston-kings-row",
+    "title": "17173 守望先锋专区-温斯顿-国王大道 A 点的第一处落位",
+    "author": "17173 守望先锋专区",
+    "sourceTitle": "《守望先锋》温斯顿基础讲解 · 国王大道示例",
+    "url": "https://ow.17173.com/content/07232025/165721278.shtml",
+    "role": "重装",
+    "heroes": [
+      "温斯顿"
+    ],
+    "maps": [
+      "国王大道"
+    ],
+    "stage": "落位",
+    "tags": [
+      "国王大道",
+      "A点",
+      "落位",
+      "进攻",
+      "掩体",
+      "雕像"
+    ],
+    "principle": "从雕像附近读防守站位。正面压力小时可以步行靠近，从有遮挡、队友能支援的位置再威胁后排。",
+    "application": "停在过拱门前，比较步行到雕像和直接跳过雕像。两条路线分别会暴露给哪些敌人？落地后谁能跟进？",
     "kind": "教练笔记"
   },
   {
@@ -149,11 +2705,38 @@
     "author": "Youth Gaming Association",
     "sourceTitle": "YGA Esport Guidebook · Overwatch 2，站位与开团节奏（书页 195–196）",
     "url": "https://bytespeed.com/wp-content/uploads/2025/11/YGA-ESPORT-GUIDEBOOK-2025-26-Updated-11-5-25.pdf",
-    "role": "通用",
+    "role": "综合",
     "heroes": [],
-    "tags": ["团战", "站位", "路口", "节奏", "转点"],
+    "stage": "团战",
+    "tags": [
+      "团战",
+      "站位",
+      "路口",
+      "节奏",
+      "转点"
+    ],
     "principle": "准备主动接团时，队友要能跟前排同时过拐角。还在等大招或关键位置时，可以守住路口，给后排留下撤退空间。",
     "application": "回到己方坦克第一次过角的位置，看身后队友正往哪里走。如果有人仍在转点，比较先停在角内与马上追出的后果。",
+    "kind": "教练笔记"
+  },
+  {
+    "id": "yga-ult-economy",
+    "title": "下一轮要留下哪个大招",
+    "author": "Youth Gaming Association",
+    "sourceTitle": "YGA Esport Guidebook · Overwatch 2，Economy（书页 207）",
+    "url": "https://bytespeed.com/wp-content/uploads/2025/11/YGA-ESPORT-GUIDEBOOK-2025-26-Updated-11-5-25.pdf",
+    "role": "综合",
+    "heroes": [],
+    "stage": "大招",
+    "tags": [
+      "终极技能",
+      "大招",
+      "资源",
+      "团战",
+      "反打"
+    ],
+    "principle": "同一波里连续交大，会影响下一波的选择。先想清楚哪一个用来开团、哪一个用于化解敌方反打。",
+    "application": "回看己方第二个大招生效的瞬间，写下当时仍在场的威胁，以及第一个大招已经解决了什么。",
     "kind": "教练笔记"
   }
 ]

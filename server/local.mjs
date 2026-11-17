@@ -95,10 +95,16 @@ const port = Number(process.env.PORT || (previewPort >= 0 ? process.argv[preview
 const previewHost = process.argv.indexOf('--host');
 const host = process.env.HOST || (previewHost >= 0 ? process.argv[previewHost + 1] : '127.0.0.1');
 const localHosts = new Set(['localhost', '127.0.0.1', '[::1]']);
+const drain = req => {
+  if (!req.readableEnded && !req.destroyed) req.resume();
+};
 const server = createServer(async (req, res) => {
+  req.on('error', () => {});
+  res.on('error', () => {});
   try {
     const url = new URL(req.url, 'http://' + (req.headers.host || 'localhost'));
     if (host === '127.0.0.1' && !localHosts.has(url.hostname)) {
+      drain(req);
       res.writeHead(403).end();
       return;
     }
@@ -114,13 +120,15 @@ const server = createServer(async (req, res) => {
         })
       });
       const result = await handleApi(request, process.env, {
-        captureByCode: captureDir ? captureByCode : undefined
+        captureByCode: captureDir ? captureByCode : undefined,
+        ffmpeg: true
       });
       res.writeHead(result.status, Object.fromEntries(result.headers));
       res.end(Buffer.from(await result.arrayBuffer()));
       return;
     }
     if (!['GET', 'HEAD'].includes(req.method)) {
+      drain(req);
       res.writeHead(405).end();
       return;
     }
@@ -144,8 +152,22 @@ const server = createServer(async (req, res) => {
     });
     res.end(req.method === 'HEAD' ? undefined : data);
   } catch {
+    drain(req);
     if (!res.headersSent) res.writeHead(500);
     res.end();
   }
+});
+server.on('clientError', (error, socket) => {
+  if (socket.writable) socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
+  else socket.destroy();
+});
+server.on('error', error => {
+  if (error.code === 'EADDRINUSE') {
+    console.error('端口 ' + port + ' 已被占用。多半是上一个 npm start 还在运行：回到那个终端按 Ctrl+C 停掉它，再重新启动。');
+    console.error('想同时开第二个实例，就换个端口：PowerShell 用 $env:PORT=8790; npm start，cmd 用 set PORT=8790 && npm start，bash 用 PORT=8790 npm start。');
+  } else {
+    console.error('本地服务启动失败：' + error.message);
+  }
+  process.exitCode = 1;
 });
 server.listen(port, host, () => console.log('Overwatch Guide listening on http://' + host + ':' + server.address().port));

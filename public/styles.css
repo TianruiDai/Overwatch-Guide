@@ -1426,8 +1426,40 @@ dialog::backdrop {
   border-radius: 6px
 }
 
+.player-stack {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  align-content: start
+}
+
 .player-panel {
   padding: 10px
+}
+
+.agent-terminal {
+  padding: 0;
+  min-height: min(42vh, 420px);
+  display: flex;
+  flex-direction: column
+}
+
+.agent-terminal .agent-shell {
+  flex: 1;
+  min-height: min(36vh, 380px);
+  border: none;
+  border-radius: 0
+}
+
+.agent-terminal .agent-thread {
+  max-height: none;
+  min-height: min(32vh, 360px)
+}
+
+.agent-panel > .agent-composer {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 0
 }
 
 .file-preview {
@@ -1882,6 +1914,385 @@ progress {
   }
 }
 
+.wave-box {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, var(--line) 85%, #f99e1a);
+  border-radius: 12px;
+  background: color-mix(in srgb, #1a1510 70%, #11161c)
+}
+
+.wave-grid {
+  margin: 10px 0
+}
+
+.wave-grid p {
+  margin: 4px 0 0;
+  font-size: 13px
+}
+
+.skill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 12px;
+  font-size: 13px
+}
+
+.skill-table th,
+.skill-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 7px 6px;
+  text-align: left;
+  vertical-align: top
+}
+
+.skill-table th {
+  color: var(--muted);
+  font-weight: 600
+}
+
+.coverage-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  margin: 12px 0
+}
+
+.coverage-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: var(--panel)
+}
+
+.coverage-card b {
+  display: block;
+  margin-bottom: 6px
+}
+
+.ingest-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px
+}
+
+.ingest-item {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--panel)
+}
+
 [hidden] {
   display: none !important
+}
+
+.fold {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  margin: 12px 0
+}
+
+.fold-summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 14px;
+  cursor: pointer;
+  color: #d5dde6;
+  font-weight: 600
+}
+
+.fold-summary::-webkit-details-marker {
+  display: none
+}
+
+.fold-summary span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px
+}
+
+.fold-body {
+  padding: 0 14px 14px;
+  border-top: 1px solid #2a323c
+}
+
+.agent-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  padding: 14px;
+  min-width: 0;
+  align-self: start;
+  position: sticky;
+  top: 12px
+}
+
+.agent-panel > .fold {
+  margin: 0;
+  flex: 0 0 auto
+}
+
+.agent-focus {
+  margin: 0;
+  padding: 0 2px
+}
+
+.agent-shell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #12161c;
+  overflow: hidden
+}
+
+.agent-thread {
+  flex: 1;
+  min-height: 220px;
+  max-height: min(48vh, 480px);
+  overflow: auto;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  align-content: start
+}
+
+.agent-msg {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #d7dee7
+}
+
+.agent-msg p {
+  margin: 0
+}
+
+.agent-msg.user {
+  background: #243041;
+  border: 1px solid #344457;
+  justify-self: end;
+  max-width: 92%
+}
+
+.agent-msg.status {
+  background: transparent;
+  color: #9aa6b4;
+  padding: 2px 4px;
+  font-size: 12px
+}
+
+.agent-msg.report {
+  background: #1a222c;
+  border: 1px solid #3a4554
+}
+
+.agent-msg.error {
+  background: #2a1717;
+  border: 1px solid #5a2c2c;
+  color: #f0b4b4
+}
+
+.agent-msg.identity {
+  background: #1a222c;
+  border: 1px solid #3a4554;
+  justify-self: stretch;
+  max-width: none
+}
+
+.identity-card h3 {
+  margin: 0 0 6px;
+  font-size: 14px
+}
+
+.identity-card .identity-form {
+  margin-top: 8px
+}
+
+.identity-card .identity-error {
+  margin: 6px 0 0
+}
+
+.agent-report h3,
+.agent-report h4,
+.agent-wave h4 {
+  margin: 0 0 6px;
+  font-size: 14px
+}
+
+.agent-wave {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #2d3642
+}
+
+.agent-skills,
+.agent-drills ul {
+  margin: 6px 0 0;
+  padding-left: 18px
+}
+
+.agent-composer {
+  border-top: 1px solid #2a323c;
+  padding: 10px 12px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #161b22
+}
+
+.agent-composer-bar-only {
+  flex-wrap: wrap
+}
+
+.agent-status {
+  margin: 0;
+  color: #9aa6b4;
+  font-size: 12px;
+  min-height: 1.2em
+}
+
+.agent-composer-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0
+}
+
+@media(max-width:780px) {
+  .player-stack {
+    display: contents
+  }
+
+  .player-panel {
+    order: 1
+  }
+
+  .agent-panel {
+    order: 2;
+    position: static;
+    min-height: 0
+  }
+
+  .agent-terminal {
+    order: 3;
+    min-height: 0
+  }
+
+  .agent-terminal .agent-thread {
+    max-height: 42vh;
+    min-height: 200px
+  }
+}
+
+.knowledge-picker {
+  margin: 10px 0 4px;
+  max-height: 280px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #12161c
+}
+
+.knowledge-picker .section-head {
+  margin-bottom: 6px
+}
+
+.knowledge-picker .fold {
+  margin: 6px 0;
+  background: transparent
+}
+
+.knowledge-check-list {
+  display: grid;
+  gap: 6px;
+  padding-top: 8px
+}
+
+.knowledge-check {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 12px;
+  color: #c9d1dc;
+  cursor: pointer
+}
+
+.knowledge-check input[type=checkbox] {
+  width: auto;
+  min-width: 1rem;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 2px
+}
+
+.knowledge-check span {
+  flex: 1;
+  min-width: 0;
+  text-align: left
+}
+
+.knowledge-bulk {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: auto
+}
+
+.knowledge-bulk button {
+  padding: 2px 8px;
+  font-size: 11px
+}
+
+.knowledge-all {
+  font-weight: 650;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px
+}
+
+.coach-report h2 {
+  font-size: 16px;
+  margin: 0 0 10px
+}
+
+.coach-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #2d3642
+}
+
+.coach-section h3 {
+  font-size: 14px;
+  margin: 0 0 8px
+}
+
+.coach-body {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: #d7dee7;
+  font-size: 13px
+}
+
+.coach-closing {
+  margin-top: 12px;
+  color: #9aa6b4;
+  font-size: 13px
+}
+
+.seek-inline {
+  display: inline;
+  padding: 0 2px;
+  font: inherit;
+  color: var(--orange)
 }

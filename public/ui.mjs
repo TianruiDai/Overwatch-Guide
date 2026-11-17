@@ -52,8 +52,11 @@ export function escapeHTML(v = '') {
 export const roleIcon = role => ({
   '重装': 'shield',
   '输出': 'crosshair',
+  '辅助': 'heal',
   '支援': 'heal',
-  '通用': 'layers'
+  '综合': 'layers',
+  '通用': 'layers',
+  '版本': 'note'
 } [role] || 'layers');
 export function hydrateIcons(root = document) {
   root.querySelectorAll('i[data-icon]').forEach(i => {
@@ -83,17 +86,26 @@ export function modal(title, content, setup) {
   setup?.(dialog);
   return dialog;
 }
+export async function apiGet(path, signal) {
+  return api(path, undefined, signal);
+}
 export async function api(path, data, signal) {
-  const res = await fetch('/api/' + path, data === undefined ? {
-    signal
-  } : {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data),
-    signal
-  });
+  let res;
+  try {
+    res = await fetch('/api/' + path, data === undefined ? {
+      signal
+    } : {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data),
+      signal
+    });
+  } catch (e) {
+    if (e?.name === 'AbortError') throw e;
+    throw new Error('连不上本地工作台。请在项目目录重新运行 npm start，再刷新本页。');
+  }
   const payload = await res.json().catch(() => ({
     error: '工作台未能读取服务响应。'
   }));

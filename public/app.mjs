@@ -1,9 +1,11 @@
 import {
   providers,
   formatTime,
-  safeLink,
-  roles
+  safeLink
 } from '/shared/domain.mjs';
+import {
+  groupCardsByUp
+} from '/shared/card-title.mjs';
 import {
   icon,
   hydrateIcons,
@@ -17,7 +19,9 @@ import {
 import {
   all,
   get,
-  saveImport
+  put,
+  saveImport,
+  hiddenIds
 } from './storage.mjs';
 import {
   openVideo,
@@ -87,10 +91,13 @@ const app = {
   playerUrl: null,
   lastIssue: null,
   profileFor(id) {
+    const preset = providers[id]?.model || '',
+      stored = prefs.models?.[id] || '',
+      retired = stored === 'deepseek-v4' && id === 'deepseek';
     return {
       provider: id,
       base: id === 'server' ? '' : (providers[id]?.base || prefs.bases?.[id] || ''),
-      model: id === 'server' ? (this.status.serverModel || '') : (prefs.models?.[id] || providers[id]?.model || ''),
+      model: id === 'server' ? (this.status.serverModel || '') : (retired ? preset : (stored || preset)),
       key: secrets.get(id) || ''
     };
   },
@@ -134,16 +141,36 @@ const app = {
     };
     this.lastIssue = null;
     const settings = this.settings();
-    const buttons = document.getElementById('run-actions');
-    if (buttons) {
-      buttons.innerHTML = `<button class="secondary" type="button" id="stop-run">${icon('stop',13)} 暂停</button>`;
-      buttons.firstChild.onclick = () => controller.abort();
-    }
-    const update = (stage, count, total) => {
+    const syncStop = () => {
+      const stop = document.getElementById('agent-stop') || document.getElementById('stop-run');
+      if (stop) stop.onclick = () => controller.abort();
+      const send = document.getElementById('agent-send');
+      if (send) send.disabled = true;
+    };
+    syncStop();
+    const update = (stage, count, total, payload) => {
       this.activeRun.line = stage + ' · ' + count + ' / ' + total + ' 已完成';
       if (current() === 'review/' + match.id) {
         const el = document.getElementById('job-status');
         if (el) el.textContent = this.activeRun.line;
+        const status = document.getElementById('agent-status-line');
+        if (status) status.textContent = this.activeRun.line;
+        if (payload?.bindIdentity || payload?.agentHtml) {
+          const thread = document.getElementById('agent-thread');
+          if (thread) {
+            let node = payload?.bindIdentity ? thread.querySelector('[data-identity-gate]')?.closest('.agent-msg') : null;
+            if (!node && payload?.agentHtml) {
+              node = document.createElement('div');
+              node.className = 'agent-msg ' + (payload.role || 'status');
+              node.innerHTML = payload.agentHtml;
+              thread.appendChild(node);
+            } else if (node && payload?.agentHtml && payload?.bindIdentity) {
+              node.innerHTML = payload.agentHtml;
+            }
+            if (node && payload?.bindIdentity) payload.bindIdentity(node);
+            if (node) thread.scrollTop = thread.scrollHeight;
+          }
+        }
       }
     };
     try {
@@ -155,6 +182,18 @@ const app = {
         id: match.id,
         message
       };
+      try {
+        const saved = await get('matches', match.id);
+        if (saved) {
+          saved.agentLog = saved.agentLog || [];
+          saved.agentLog.push({
+            role: 'error',
+            text: message,
+            at: Date.now()
+          });
+          await put('matches', saved);
+        }
+      } catch {}
       toast(message);
     } finally {
       this.activeRun = null;
@@ -210,9 +249,10 @@ async function render() {
     else el.removeAttribute('aria-current');
   }
   try {
-    const [own, matches] = await Promise.all([all('cards'), all('shelf')]);
+    const [own, matches, hidden] = await Promise.all([all('cards'), all('shelf'), hiddenIds()]);
     if (token !== app.renderToken) return;
-    app.cards = [...builtins, ...own];
+    const blocked = new Set(hidden);
+    app.cards = [...builtins.filter(c => !blocked.has(c.id)), ...own.filter(c => !blocked.has(c.id))];
     matches.sort((a, b) => b.created - a.created);
     if (page === 'workspace') {
       main.innerHTML = dashboard(app.cards, matches, uploadTab);
@@ -386,19 +426,59 @@ async function openImport(file, lookup) {
   }
   if (ticket !== fileTicket || !wait.open || !wait.textContent.includes('正在本机读取')) return;
   const title = file.name.replace(/\.[a-z0-9]{2,6}$/i, '');
-  const heroes = ['温斯顿', '安娜', '猎空', '士兵：76', '莱因哈特', 'D.Va', '查莉娅', '源氏', '雾子', '卢西奥', '布丽吉塔', '禅雅塔', '艾什', '卡西迪', '西格玛', '拉玛刹', '末日铁拳', '骇灾', '无漾', '索杰恩'];
-  const maps = ['国王大道', '多拉多', '漓江塔', '直布罗陀监测站', '努巴尼', '好莱坞', '伊利奥斯', '里阿尔托', '艾兴瓦尔德', '香巴里寺院'];
-  const hero = heroes.find(x => title.includes(x)) || '',
-    map = maps.find(x => title.includes(x)) || lookup?.map || '';
+  const versionCards = app.cards.filter(c => c.role === '版本');
+  const knowledgePicker = groupCardsByUp(app.cards).map((group, i) => {
+    const defaults = group.cards.filter(c => c.role === '版本').length;
+    return `<details class="fold knowledge-pick"${defaults ? ' open' : ''} data-group="${i}"><summary class="fold-summary"><span>${h(group.up)}</span><span class="tag">${group.cards.length}</span></summary><div class="fold-body knowledge-check-list">
+      <label class="knowledge-check knowledge-all"><input type="checkbox" data-all-group="${i}" ${defaults && defaults === group.cards.length ? 'checked' : ''}><span>全选 ${h(group.up)}</span></label>
+      ${group.cards.map(c => `<label class="knowledge-check"><input type="checkbox" name="knowledge" value="${h(c.id)}" ${c.role === '版本' ? 'checked' : ''}><span>${h(c.title)}</span></label>`).join('')}
+    </div></details>`;
+  }).join('');
   modal('导入对局录像', `<div class="file-preview"><img src="${h(cover)}" alt="录像预览"><div><b>${h(file.name)}</b><small>${formatTime(duration)} · ${(file.size/1048576).toFixed(1)} MB${lookup?' · 回放码 '+h(lookup.code):''}</small></div></div>
   <form id="import-form" class="fields"><label>对局名称<input name="title" maxlength="120" value="${h(title)}" required></label>
-  <div class="field-grid"><label>玩家英雄<input name="hero" list="heroes" value="${h(hero)}" placeholder="可选，如温斯顿"><datalist id="heroes">${heroes.map(x=>`<option value="${h(x)}">`).join('')}</datalist></label>
-  <label>地图<input name="map" list="maps" value="${h(map)}" placeholder="可选，如国王大道"><datalist id="maps">${maps.map(x=>`<option value="${h(x)}">`).join('')}</datalist></label></div>
-  <div class="field-grid"><label>职责<select name="role">${['通用',...roles.filter(r=>r!=='通用')].map(r=>`<option>${r}</option>`).join('')}</select></label><label>攻防<select name="side"><option>未指定</option><option>进攻</option><option>防守</option><option>攻防双方</option><option>控制 / 推进</option></select></label></div>
-  <label>本局关注点<textarea name="focus" maxlength="500" placeholder="例如：分析 A 点每一轮进场的落位，以及屏障该何时交。"></textarea></label>
-  <p class="input-help">原录像保存在当前浏览器。点击「开始复盘」时才会发送采样帧。</p><p class="error-box" role="alert"></p>
+  <div class="knowledge-picker"><div class="section-head"><h3>本局知识库</h3><span class="section-caption" id="knowledge-count">已选 ${versionCards.length}</span><span class="knowledge-bulk"><button type="button" class="ghost" data-bulk="all">全选</button><button type="button" class="ghost" data-bulk="none">清空</button></span></div>
+  <p class="input-help">按 up主 分组。默认勾选全部版本资料（技能与地图）。英雄、地图、职责与攻防将在复盘开始时由视觉模型辨认。</p>${knowledgePicker || '<p class="muted">暂无教学资料。</p>'}</div>
+  <p class="input-help">原录像保存在当前浏览器。额外提示词请在对局页 Composer 填写。</p><p class="error-box" role="alert"></p>
   <div class="actions end"><button class="primary" type="submit">保存并打开对局 ${icon('arrow',15)}</button></div></form>`, d => {
     const f = d.querySelector('form');
+    const countEl = d.querySelector('#knowledge-count');
+    const syncCount = () => {
+      const n = f.querySelectorAll('input[name=knowledge]:checked').length;
+      if (countEl) countEl.textContent = '已选 ' + n;
+    };
+    const syncGroup = details => {
+      const boxes = [...details.querySelectorAll('input[name=knowledge]')];
+      const all = details.querySelector('[data-all-group]');
+      if (!all) return;
+      const on = boxes.filter(b => b.checked).length;
+      all.checked = on === boxes.length;
+      all.indeterminate = on > 0 && on < boxes.length;
+    };
+    const syncAllGroups = () => {
+      for (const details of f.querySelectorAll('.knowledge-pick')) syncGroup(details);
+    };
+    f.addEventListener('change', e => {
+      if (e.target?.name === 'knowledge') {
+        syncCount();
+        const details = e.target.closest('.knowledge-pick');
+        if (details) syncGroup(details);
+        return;
+      }
+      if (e.target?.matches('[data-all-group]')) {
+        const details = e.target.closest('.knowledge-pick');
+        for (const box of details?.querySelectorAll('input[name=knowledge]') || []) box.checked = e.target.checked;
+        syncCount();
+      }
+    });
+    for (const btn of f.querySelectorAll('[data-bulk]')) {
+      btn.onclick = () => {
+        const on = btn.dataset.bulk === 'all';
+        for (const box of f.querySelectorAll('input[name=knowledge]')) box.checked = on;
+        syncCount();
+        syncAllGroups();
+      };
+    }
+    syncAllGroups();
     f.onsubmit = async e => {
       e.preventDefault();
       const vals = Object.fromEntries(new FormData(f)),
@@ -408,16 +488,19 @@ async function openImport(file, lookup) {
         err.textContent = '请填写对局名称。';
         return;
       }
+      const knowledgeIds = [...f.querySelectorAll('input[name=knowledge]:checked')].map(el => el.value);
       const item = {
         id: crypto.randomUUID(),
         title: vals.title.trim(),
         filename: file.name,
         context: {
-          hero: vals.hero.trim(),
-          map: vals.map.trim(),
-          role: vals.role,
-          side: vals.side,
-          focus: vals.focus.trim()
+          hero: '',
+          map: '',
+          role: '',
+          side: '',
+          allies: [],
+          enemies: [],
+          knowledgeIds
         },
         created: Date.now(),
         duration,

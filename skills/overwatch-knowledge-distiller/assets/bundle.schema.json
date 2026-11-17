@@ -1,0 +1,855 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Overwatch Knowledge Distillation Bundle v1",
+  "description": "Source-grounded cards. JSON Schema validates structure; scripts/validate_bundle.py checks cross-record invariants.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "as_of": {
+          "type": "string",
+          "format": "date"
+        },
+        "target_scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "as_of",
+        "target_scope",
+        "purpose"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "minItems": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/card"
+      }
+    },
+    "unresolved_units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "source_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "locator": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "issue": {
+            "type": "string",
+            "minLength": 1
+          },
+          "needed_evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "source_id",
+          "locator",
+          "issue",
+          "needed_evidence"
+        ]
+      }
+    },
+    "external_card_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "run",
+    "sources",
+    "evidence",
+    "cards",
+    "unresolved_units",
+    "external_card_ids",
+    "notes"
+  ],
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "region": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "environment": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "mode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "platform": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "patch_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "region",
+        "environment",
+        "mode",
+        "platform",
+        "patch_id"
+      ]
+    },
+    "hero": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "tank",
+            "damage",
+            "support"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "role"
+      ]
+    },
+    "interval": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end_s": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "start_s",
+        "end_s"
+      ]
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "end_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "text_locator": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "start_s",
+        "end_s",
+        "text_locator",
+        "frame_ref"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "type": {
+          "enum": [
+            "video_file",
+            "video_url",
+            "transcript",
+            "audio",
+            "webpage",
+            "official_page",
+            "synthetic"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "uri": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "recorded_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "retrieved_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "duration_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "access": {
+          "enum": [
+            "full",
+            "partial",
+            "unavailable",
+            "synthetic"
+          ]
+        },
+        "modalities": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "transcript",
+              "audio",
+              "video",
+              "text",
+              "official_page",
+              "metadata",
+              "synthetic"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ranges": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/interval"
+              }
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "ranges",
+            "locators",
+            "note"
+          ]
+        },
+        "snapshot_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "title",
+        "author",
+        "uri",
+        "published_at",
+        "recorded_at",
+        "retrieved_at",
+        "duration_seconds",
+        "access",
+        "modalities",
+        "coverage",
+        "snapshot_ref"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "source_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "channel": {
+          "enum": [
+            "transcript",
+            "audio",
+            "video",
+            "text",
+            "official_page",
+            "synthetic"
+          ]
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "representation": {
+          "enum": [
+            "quote",
+            "paraphrase",
+            "observation"
+          ]
+        },
+        "review_status": {
+          "enum": [
+            "confirmed",
+            "uncertain"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "channel",
+        "locator",
+        "statement",
+        "representation",
+        "review_status"
+      ]
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "slot": {
+          "enum": [
+            "rule",
+            "conditions",
+            "actions",
+            "rationale",
+            "exceptions",
+            "mistakes",
+            "review_cues",
+            "training",
+            "fact",
+            "change"
+          ]
+        },
+        "basis": {
+          "enum": [
+            "source_statement",
+            "observed_event",
+            "official_fact",
+            "model_inference"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "derived_from_claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "slot",
+        "basis",
+        "text",
+        "evidence_ids",
+        "derived_from_claim_ids"
+      ]
+    },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sensitivity": {
+          "enum": [
+            "stable_principle",
+            "mechanic_dependent",
+            "numeric",
+            "mixed"
+          ]
+        },
+        "status": {
+          "enum": [
+            "not_checked",
+            "verified_for_scope",
+            "historical_only",
+            "conflict",
+            "unknown"
+          ]
+        },
+        "source_patch_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "target_scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "checked_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "depends_on_cards": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "sensitivity",
+        "status",
+        "source_patch_id",
+        "target_scope",
+        "checked_at",
+        "depends_on_cards",
+        "note"
+      ]
+    },
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "ready",
+            "needs_review",
+            "archived",
+            "superseded",
+            "demo"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primary_category": {
+          "enum": [
+            "tank",
+            "damage",
+            "support",
+            "general",
+            "version"
+          ]
+        },
+        "primary_hero": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/hero"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "subjects": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "heroes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "maps": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "mechanics": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "heroes",
+            "maps",
+            "mechanics"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "map_location": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "side": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "phase": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "rank": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "team_comp": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "enemy_comp": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            }
+          },
+          "required": [
+            "map_location",
+            "side",
+            "phase",
+            "rank",
+            "team_comp",
+            "enemy_comp"
+          ]
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claim"
+          },
+          "minItems": 1
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "confidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "source_support": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ]
+            },
+            "applicability": {
+              "enum": [
+                "high",
+                "medium",
+                "low",
+                "unknown"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "source_support",
+            "applicability",
+            "reason"
+          ]
+        },
+        "relations": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "derived_from": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "uniqueItems": true
+            },
+            "contradicts": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "uniqueItems": true
+            },
+            "supersedes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "uniqueItems": true
+            },
+            "duplicates": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "derived_from",
+            "contradicts",
+            "supersedes",
+            "duplicates"
+          ]
+        },
+        "retrieval_questions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "status",
+        "title",
+        "primary_category",
+        "primary_hero",
+        "subjects",
+        "tags",
+        "context",
+        "claims",
+        "version",
+        "confidence",
+        "relations",
+        "retrieval_questions"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "primary_category": {
+                "enum": [
+                  "tank",
+                  "damage",
+                  "support"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "primary_hero": {
+                "$ref": "#/$defs/hero"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

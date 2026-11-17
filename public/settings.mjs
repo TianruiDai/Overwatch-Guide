@@ -30,7 +30,8 @@ export function settingsPage(app) {
   <label id="key-field">API Key<input name="key" type="password" placeholder="输入服务商的 API Key" autocomplete="off" spellcheck="false" maxlength="2048"></label>
   <p class="input-help" id="key-help">密钥仅在当前页面内存中使用，刷新或关闭后需重新输入。</p>
   <p id="profile-msg" class="info-box" role="status"></p>
-  <div class="actions"><button class="primary" type="submit">保存配置</button><button class="secondary" type="button" id="test-model">测试视觉连接</button></div>
+  <div class="actions"><button class="primary" type="submit">保存配置</button><button class="secondary" type="button" id="test-model">测试视觉连接</button><button class="ghost" type="button" id="list-models">查看可用模型</button></div>
+  <p class="input-help" id="model-list" hidden></p>
   </form><aside class="panel pad"><h2 class="panel-title">${icon('code',20)} 本地与 MCP</h2><p class="formatted">自托管工作台支持 OpenAI 兼容的视觉端点，也能查询本机的回放 MCP。</p>
   <details class="help-box"><summary>配置服务端模型</summary><p class="input-help">在项目的 .env 中设置以下变量，重启后选择“服务端预设”。</p><pre>OW_MODEL_BASE_URL\nOW_MODEL_ID\nOW_MODEL_API_KEY</pre></details>
   <details class="help-box"><summary>配置回放代码查询</summary><p class="input-help">启动 Overwatch AIO 的 Streamable HTTP 服务，在 .env 中设置 OW_MCP_URL。已录制的视频可按代码命名并放入 OW_CAPTURE_DIR。</p></details>
@@ -93,6 +94,24 @@ export function bindSettings(app) {
       msg.textContent = errorText(e);
     } finally {
       test.disabled = false;
+    }
+  };
+  const list = document.getElementById('list-models'),
+    listOut = document.getElementById('model-list');
+  list.onclick = async () => {
+    if (!f.reportValidity()) return;
+    list.disabled = true;
+    listOut.hidden = false;
+    listOut.textContent = '正在读取服务商的模型列表…';
+    try {
+      const result = await api('model/catalog', {
+        settings: values()
+      });
+      listOut.textContent = (result.listed ? '当前模型在列表中：' : '当前模型不在列表中，请从下面选一个：') + result.models.join('、');
+    } catch (e) {
+      listOut.textContent = errorText(e);
+    } finally {
+      list.disabled = false;
     }
   };
 }

@@ -65,7 +65,16 @@ export async function openVideo(file) {
     throw e;
   }
 }
-export async function capture(reader, time, maxWidth = 1120) {
+/**
+ * Capture a frame. Pass a number as 3rd arg for legacy maxWidth,
+ * or `{ maxWidth, region: {x0,y0,x1,y1} }` for native-resolution crops.
+ */
+export async function capture(reader, time, opts = 1120) {
+  const options = typeof opts === 'number' ? {
+    maxWidth: opts
+  } : (opts || {});
+  const maxWidth = Number.isFinite(options.maxWidth) ? options.maxWidth : 1120;
+  const region = options.region;
   const {
     video,
     duration
@@ -75,12 +84,28 @@ export async function capture(reader, time, maxWidth = 1120) {
     await waitFor(video, 'seeked', () => {
       video.currentTime = target;
     });
-  const scale = Math.min(1, maxWidth / Math.max(video.videoWidth, video.videoHeight));
+  const vw = video.videoWidth;
+  const vh = video.videoHeight;
   const canvas = document.createElement('canvas');
-  canvas.width = Math.max(1, Math.round(video.videoWidth * scale));
-  canvas.height = Math.max(1, Math.round(video.videoHeight * scale));
-  canvas.getContext('2d', {
+  const ctx = canvas.getContext('2d', {
     alpha: false
-  }).drawImage(video, 0, 0, canvas.width, canvas.height);
+  });
+  if (region && Number.isFinite(region.x0) && Number.isFinite(region.y0) &&
+    Number.isFinite(region.x1) && Number.isFinite(region.y1)) {
+    const sx = Math.max(0, Math.floor(vw * Math.min(region.x0, region.x1)));
+    const sy = Math.max(0, Math.floor(vh * Math.min(region.y0, region.y1)));
+    const sw = Math.max(1, Math.ceil(vw * Math.abs(region.x1 - region.x0)));
+    const sh = Math.max(1, Math.ceil(vh * Math.abs(region.y1 - region.y0)));
+    const cropCap = Number.isFinite(options.cropMaxWidth) ? options.cropMaxWidth : 1400;
+    const scale = Math.min(1, cropCap / Math.max(sw, sh));
+    canvas.width = Math.max(1, Math.round(sw * scale));
+    canvas.height = Math.max(1, Math.round(sh * scale));
+    ctx.drawImage(video, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL('image/jpeg', 0.82);
+  }
+  const scale = Math.min(1, maxWidth / Math.max(vw, vh));
+  canvas.width = Math.max(1, Math.round(vw * scale));
+  canvas.height = Math.max(1, Math.round(vh * scale));
+  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
   return canvas.toDataURL('image/jpeg', 0.72);
 }

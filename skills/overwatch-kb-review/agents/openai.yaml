@@ -1,0 +1,13 @@
+interface:
+  display_name: 守望先锋知识库复盘
+  short_description: 依据英雄教学卡和团战画面，逐波点评决策、落位和技能，并给出训练动作
+  default_prompt: 用 $overwatch-kb-review 结合项目知识库逐波复盘，给出关键时间、当时可行的动作和教学出处。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

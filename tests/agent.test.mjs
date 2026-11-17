@@ -69,7 +69,8 @@ test('a review ties its advice to a supplied visual frame and a retrieved coachi
   });
   assert.equal(res.status, 200);
   const result = await res.json();
-  assert.equal(upstreamBody.messages[1].content.filter(p => p.type === 'image_url').length, 2);
+  const vision = upstreamBody.messages.find(m => Array.isArray(m.content) && m.content.some(p => p.type === 'image_url'));
+  assert.equal(vision.content.filter(p => p.type === 'image_url').length, 2);
   assert.equal(result.observations[0].time, 8);
   assert.deepEqual(result.observations[0].sources, ['winston-cover']);
 });
@@ -143,4 +144,79 @@ test('a custom vision endpoint may be any https host or a local http server', as
   }), {}, {
     fetcher
   })).status, 400);
+});
+
+test('a rejected model request surfaces the provider message instead of a guess', async () => {
+  const fetcher = async () => Response.json({
+    error: {
+      message: 'Model Not Exist',
+      type: 'invalid_request_error'
+    }
+  }, {
+    status: 400
+  });
+  const res = await handleApi(request('model/test', {
+    settings: {
+      provider: 'deepseek',
+      model: 'deepseek-v4',
+      key: 'test-only'
+    }
+  }), {}, {
+    fetcher
+  });
+  assert.equal(res.status, 502);
+  const body = await res.json();
+  assert.match(body.error, /HTTP 400/);
+  assert.match(body.error, /Model Not Exist/);
+});
+
+test('the catalog lists provider model ids and whether the configured one exists', async () => {
+  const fetcher = async url => {
+    assert.equal(String(url), 'https://api.deepseek.com/v1/models');
+    return Response.json({
+      data: [{
+        id: 'deepseek-chat'
+      }, {
+        id: 'deepseek-reasoner'
+      }]
+    });
+  };
+  const res = await handleApi(request('model/catalog', {
+    settings: {
+      provider: 'deepseek',
+      model: 'deepseek-v4',
+      key: 'test-only'
+    }
+  }), {}, {
+    fetcher
+  });
+  assert.equal(res.status, 200);
+  assert.deepEqual(await res.json(), {
+    models: ['deepseek-chat', 'deepseek-reasoner'],
+    listed: false
+  });
+});
+
+test('the DeepSeek preset uses the vision-capable flash model', async () => {
+  let body;
+  const res = await handleApi(request('model/test', {
+    settings: {
+      provider: 'deepseek',
+      key: 'test-only'
+    }
+  }), {}, {
+    fetcher: async (url, options) => {
+      assert.equal(String(url), 'https://api.deepseek.com/v1/chat/completions');
+      body = JSON.parse(options.body);
+      return Response.json({
+        choices: [{
+          message: {
+            content: '{"ok":true}'
+          }
+        }]
+      });
+    }
+  });
+  assert.equal(res.status, 200);
+  assert.equal(body.model, 'deepseek-flash');
 });

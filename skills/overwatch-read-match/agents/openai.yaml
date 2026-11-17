@@ -1,0 +1,13 @@
+interface:
+  display_name: 守望先锋对局视频判读
+  short_description: 从对局画面辨认玩家与双方英雄，按回合还原地图目标、换人与实际打法
+  default_prompt: 用 $overwatch-read-match 判读这段对局，列出双方英雄和换人，说明地图、攻防以及每波实际怎么打。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

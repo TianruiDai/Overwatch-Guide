@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "id": "DEMO_ONLY",
+    "as_of": "2026-11-17",
+    "target_scope": {
+      "region": null,
+      "environment": null,
+      "mode": null,
+      "platform": null,
+      "patch_id": null
+    },
+    "purpose": "测试数据结构与多分类输出；不得生产入库。"
+  },
+  "sources": [
+    {
+      "id": "S_DEMO",
+      "type": "synthetic",
+      "title": "自行编写的格式演示：四类教学与一个待核验单元",
+      "author": null,
+      "uri": null,
+      "published_at": null,
+      "recorded_at": null,
+      "retrieved_at": null,
+      "duration_seconds": null,
+      "access": "synthetic",
+      "modalities": [
+        "synthetic"
+      ],
+      "coverage": {
+        "ranges": [],
+        "locators": [
+          "演示段落1—5"
+        ],
+        "note": "人工编写的虚构输入，不来自任何真实视频、教练或玩家录像。"
+      },
+      "snapshot_ref": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E_DEMO_1",
+      "source_id": "S_DEMO",
+      "channel": "synthetic",
+      "locator": {
+        "start_s": null,
+        "end_s": null,
+        "text_locator": "演示段落1",
+        "frame_ref": null
+      },
+      "statement": "在这一段未进入近身交火的准备阶段，我要求温斯顿先站到侧面观察，再决定是否跳入；不要把能够步行安全到达的位置都用跳跃去换。",
+      "representation": "quote",
+      "review_status": "confirmed"
+    },
+    {
+      "id": "E_DEMO_2",
+      "source_id": "S_DEMO",
+      "channel": "synthetic",
+      "locator": {
+        "start_s": null,
+        "end_s": null,
+        "text_locator": "演示段落2",
+        "frame_ref": null
+      },
+      "statement": "这一段源氏准备与队友协同进入时，要先确认同伴已经准备好，再按约定信号从侧面行动，避免各打各的。",
+      "representation": "quote",
+      "review_status": "confirmed"
+    },
+    {
+      "id": "E_DEMO_3",
+      "source_id": "S_DEMO",
+      "channel": "synthetic",
+      "locator": {
+        "start_s": null,
+        "end_s": null,
+        "text_locator": "演示段落3",
+        "frame_ref": null
+      },
+      "statement": "本段安娜移动前先确认新的站位能否看到需要支援的队友，不要机械地照抄队友的行进路线。",
+      "representation": "quote",
+      "review_status": "confirmed"
+    },
+    {
+      "id": "E_DEMO_4",
+      "source_id": "S_DEMO",
+      "channel": "synthetic",
+      "locator": {
+        "start_s": null,
+        "end_s": null,
+        "text_locator": "演示段落4",
+        "frame_ref": null
+      },
+      "statement": "这里我讲一条团队通则：开团前应确认共同目标、行动信号和队员准备状态；三者没有对齐时，不要把沉默当作队友已经准备好了。",
+      "representation": "quote",
+      "review_status": "confirmed"
+    },
+    {
+      "id": "E_DEMO_5",
+      "source_id": "S_DEMO",
+      "channel": "synthetic",
+      "locator": {
+        "start_s": null,
+        "end_s": null,
+        "text_locator": "演示段落5",
+        "frame_ref": null
+      },
+      "statement": "最近有一个技能的冷却被改了，但这里没有说明哪个补丁、技能和数值，需要查看官网。",
+      "representation": "quote",
+      "review_status": "confirmed"
+    }
+  ],
+  "cards": [
+    {
+      "id": "C_DEMO_1",
+      "revision": 1,
+      "status": "demo",
+      "title": "准备阶段先观察，再决定是否用跳跃进入",
+      "primary_category": "tank",
+      "primary_hero": {
+        "id": "winston",
+        "name": "温斯顿",
+        "role": "tank"
+      },
+      "subjects": {
+        "heroes": [
+          "温斯顿"
+        ],
+        "maps": [],
+        "mechanics": []
+      },
+      "tags": [
+        "synthetic-demo",
+        "positioning"
+      ],
+      "context": {
+        "map_location": null,
+        "side": null,
+        "phase": null,
+        "rank": null,
+        "team_comp": null,
+        "enemy_comp": null
+      },
+      "claims": [
+        {
+          "id": "CL_DEMO_1_1",
+          "slot": "rule",
+          "basis": "source_statement",
+          "text": "在准备阶段，先到侧面观察；能够安全步行取得的位置，不自动使用跳跃。",
+          "evidence_ids": [
+            "E_DEMO_1"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_1_2",
+          "slot": "conditions",
+          "basis": "source_statement",
+          "text": "演示段落设定为尚未进入近身交火、能够安全步行取得观察位置。",
+          "evidence_ids": [
+            "E_DEMO_1"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_1_3",
+          "slot": "actions",
+          "basis": "source_statement",
+          "text": "先步行到侧面观察位置，再根据后续局面决定是否跳入。",
+          "evidence_ids": [
+            "E_DEMO_1"
+          ],
+          "derived_from_claim_ids": []
+        }
+      ],
+      "version": {
+        "sensitivity": "mechanic_dependent",
+        "status": "not_checked",
+        "source_patch_id": null,
+        "target_scope": {
+          "region": null,
+          "environment": null,
+          "mode": null,
+          "platform": null,
+          "patch_id": null
+        },
+        "checked_at": null,
+        "depends_on_cards": [],
+        "note": "纯格式演示，不是已核验的游戏教学，也不声称适用于当前版本。"
+      },
+      "confidence": {
+        "source_support": "high",
+        "applicability": "unknown",
+        "reason": "字段准确对应本文件人工编写的演示输入；并无真实视频或当前适用性验证。"
+      },
+      "relations": {
+        "derived_from": [],
+        "contradicts": [],
+        "supersedes": [],
+        "duplicates": []
+      },
+      "retrieval_questions": [
+        "温斯顿进入前是否需要立刻使用跳跃？"
+      ]
+    },
+    {
+      "id": "C_DEMO_2",
+      "revision": 1,
+      "status": "demo",
+      "title": "协同进入前先确认队友准备状态",
+      "primary_category": "damage",
+      "primary_hero": {
+        "id": "genji",
+        "name": "源氏",
+        "role": "damage"
+      },
+      "subjects": {
+        "heroes": [
+          "源氏"
+        ],
+        "maps": [],
+        "mechanics": []
+      },
+      "tags": [
+        "synthetic-demo",
+        "positioning"
+      ],
+      "context": {
+        "map_location": null,
+        "side": null,
+        "phase": null,
+        "rank": null,
+        "team_comp": null,
+        "enemy_comp": null
+      },
+      "claims": [
+        {
+          "id": "CL_DEMO_2_1",
+          "slot": "rule",
+          "basis": "source_statement",
+          "text": "准备与队友协同进入时，先确认同伴就绪，再按约定信号行动。",
+          "evidence_ids": [
+            "E_DEMO_2"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_2_2",
+          "slot": "conditions",
+          "basis": "source_statement",
+          "text": "演示中的源氏计划与队友一同进入，而非独立行动。",
+          "evidence_ids": [
+            "E_DEMO_2"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_2_3",
+          "slot": "actions",
+          "basis": "source_statement",
+          "text": "确认准备状态，等待约定信号，从计划的侧面行动。",
+          "evidence_ids": [
+            "E_DEMO_2"
+          ],
+          "derived_from_claim_ids": []
+        }
+      ],
+      "version": {
+        "sensitivity": "stable_principle",
+        "status": "not_checked",
+        "source_patch_id": null,
+        "target_scope": {
+          "region": null,
+          "environment": null,
+          "mode": null,
+          "platform": null,
+          "patch_id": null
+        },
+        "checked_at": null,
+        "depends_on_cards": [],
+        "note": "纯格式演示，不是已核验的游戏教学，也不声称适用于当前版本。"
+      },
+      "confidence": {
+        "source_support": "high",
+        "applicability": "unknown",
+        "reason": "字段准确对应本文件人工编写的演示输入；并无真实视频或当前适用性验证。"
+      },
+      "relations": {
+        "derived_from": [],
+        "contradicts": [],
+        "supersedes": [],
+        "duplicates": []
+      },
+      "retrieval_questions": [
+        "源氏准备和队友协同进入时先检查什么？"
+      ]
+    },
+    {
+      "id": "C_DEMO_3",
+      "revision": 1,
+      "status": "demo",
+      "title": "移动前检查新站位的支援视线",
+      "primary_category": "support",
+      "primary_hero": {
+        "id": "ana",
+        "name": "安娜",
+        "role": "support"
+      },
+      "subjects": {
+        "heroes": [
+          "安娜"
+        ],
+        "maps": [],
+        "mechanics": []
+      },
+      "tags": [
+        "synthetic-demo",
+        "positioning"
+      ],
+      "context": {
+        "map_location": null,
+        "side": null,
+        "phase": null,
+        "rank": null,
+        "team_comp": null,
+        "enemy_comp": null
+      },
+      "claims": [
+        {
+          "id": "CL_DEMO_3_1",
+          "slot": "rule",
+          "basis": "source_statement",
+          "text": "移动前确认新位置能否看到需要支援的队友，不机械照抄队友路线。",
+          "evidence_ids": [
+            "E_DEMO_3"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_3_2",
+          "slot": "conditions",
+          "basis": "source_statement",
+          "text": "演示中的安娜正在规划下一次位置移动。",
+          "evidence_ids": [
+            "E_DEMO_3"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_3_3",
+          "slot": "actions",
+          "basis": "source_statement",
+          "text": "比较候选位置的支援视线，再决定移动路线。",
+          "evidence_ids": [
+            "E_DEMO_3"
+          ],
+          "derived_from_claim_ids": []
+        }
+      ],
+      "version": {
+        "sensitivity": "stable_principle",
+        "status": "not_checked",
+        "source_patch_id": null,
+        "target_scope": {
+          "region": null,
+          "environment": null,
+          "mode": null,
+          "platform": null,
+          "patch_id": null
+        },
+        "checked_at": null,
+        "depends_on_cards": [],
+        "note": "纯格式演示，不是已核验的游戏教学，也不声称适用于当前版本。"
+      },
+      "confidence": {
+        "source_support": "high",
+        "applicability": "unknown",
+        "reason": "字段准确对应本文件人工编写的演示输入；并无真实视频或当前适用性验证。"
+      },
+      "relations": {
+        "derived_from": [],
+        "contradicts": [],
+        "supersedes": [],
+        "duplicates": []
+      },
+      "retrieval_questions": [
+        "安娜转移站位前需要检查什么？"
+      ]
+    },
+    {
+      "id": "C_DEMO_4",
+      "revision": 1,
+      "status": "demo",
+      "title": "开团沟通对齐目标、信号与准备状态",
+      "primary_category": "general",
+      "primary_hero": null,
+      "subjects": {
+        "heroes": [],
+        "maps": [],
+        "mechanics": []
+      },
+      "tags": [
+        "synthetic-demo",
+        "communication"
+      ],
+      "context": {
+        "map_location": null,
+        "side": null,
+        "phase": null,
+        "rank": null,
+        "team_comp": null,
+        "enemy_comp": null
+      },
+      "claims": [
+        {
+          "id": "CL_DEMO_4_1",
+          "slot": "rule",
+          "basis": "source_statement",
+          "text": "开团前确认目标、行动信号和队员准备状态，不把沉默等同于准备完成。",
+          "evidence_ids": [
+            "E_DEMO_4"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_4_2",
+          "slot": "conditions",
+          "basis": "source_statement",
+          "text": "团队正在组织下一次共同进攻。",
+          "evidence_ids": [
+            "E_DEMO_4"
+          ],
+          "derived_from_claim_ids": []
+        },
+        {
+          "id": "CL_DEMO_4_3",
+          "slot": "actions",
+          "basis": "source_statement",
+          "text": "明确共同目标，约定行动信号，确认队员准备状态。",
+          "evidence_ids": [
+            "E_DEMO_4"
+          ],
+          "derived_from_claim_ids": []
+        }
+      ],
+      "version": {
+        "sensitivity": "stable_principle",
+        "status": "not_checked",
+        "source_patch_id": null,
+        "target_scope": {
+          "region": null,
+          "environment": null,
+          "mode": null,
+          "platform": null,
+          "patch_id": null
+        },
+        "checked_at": null,
+        "depends_on_cards": [],
+        "note": "纯格式演示，不是已核验的游戏教学，也不声称适用于当前版本。"
+      },
+      "confidence": {
+        "source_support": "high",
+        "applicability": "unknown",
+        "reason": "字段准确对应本文件人工编写的演示输入；并无真实视频或当前适用性验证。"
+      },
+      "relations": {
+        "derived_from": [],
+        "contradicts": [],
+        "supersedes": [],
+        "duplicates": []
+      },
+      "retrieval_questions": [
+        "开团前应同步哪三项信息？"
+      ]
+    }
+  ],
+  "unresolved_units": [
+    {
+      "id": "U_DEMO_1",
+      "source_id": "S_DEMO",
+      "locator": "演示段落5",
+      "issue": "出现版本变化说法，但未指定技能、补丁或数值，也没有官方证据。",
+      "needed_evidence": "明确待核验命题，并读取对应模式与日期范围的官方正文。"
+    }
+  ],
+  "external_card_ids": [],
+  "notes": [
+    "这是人工编写的虚构示例，不是对老王、Guxue 或前面对局视频的提取。",
+    "没有官方证据，因此版本分类为0张，不为凑齐五类编写事实。"
+  ]
+}

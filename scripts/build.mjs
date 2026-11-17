@@ -44,8 +44,8 @@ async function tree(relative) {
   }
   return names;
 }
-const lists = await Promise.all(['public', 'shared', 'server', 'scripts', 'tests', 'docs'].map(tree));
-const files = [...lists.flat(), 'package.json', 'package-lock.json', 'README.md', '.env.example', '.gitignore'];
+const lists = await Promise.all(['public', 'shared', 'server', 'scripts', 'tests', 'docs', 'skills'].map(tree));
+const files = [...lists.flat(), 'package.json', 'package-lock.json', 'README.md', '.env.example', '.gitignore', 'overwatch-guide-refactor-plan.md'];
 const sources = {},
   assets = {};
 
@@ -83,6 +83,7 @@ await build({
   format: 'esm',
   target: 'es2022',
   platform: 'browser',
+  external: ['node:child_process', 'node:fs', 'node:fs/promises', 'node:path', 'node:url', 'node:crypto', 'node:http', 'node:stream', 'node:os', 'node:events'],
   plugins: [{
     name: 'site-assets',
     setup(builder) {
